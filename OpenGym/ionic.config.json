@@ -1,0 +1,7 @@
+{
+  "name": "OpenGym",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
