@@ -72,5 +72,8 @@
   "devDependencies": {
     "@capacitor/cli": "4.4.0"
   },
-  "description": "An Ionic project"
+  "description": "An Ionic project",
+  "engines": {
+    "node": ">=18"
+  }
 }
