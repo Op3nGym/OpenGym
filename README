@@ -4,5 +4,8 @@
 Link to Figma: https://www.figma.com/file/3pebDmor5Z697n1IpySU8E/OpenGym
 
 ## To run:
+- Clone the repository
+- cd into OpenGym
  step 1: yarn
  step 2: ionic serve
+
