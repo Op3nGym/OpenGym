@@ -9,6 +9,9 @@ git config --global core.autocrlf input
 ## Enable local HTTPS for .NET
 dotnet dev-certs https --trust
 
+## Install Ionic
+npm install -g @ionic/cli
+
 ## CaskaydiaCove Nerd Font
 # Uncomment the below to install the CaskaydiaCove Nerd Font
 mkdir $HOME/.local
