@@ -99,10 +99,10 @@
           // .NET Interactive
           "ms-dotnettools.dotnet-interactive-vscode",
           "ms-python.python",
-          "ms-toolsai.jupyter",
-          "ms-toolsai.jupyter-keymap",
-          "ms-toolsai.jupyter-renderers",
-          "RandomFractalsInc.vscode-data-table"
+          // "ms-toolsai.jupyter",
+          // "ms-toolsai.jupyter-keymap",
+          // "ms-toolsai.jupyter-renderers",
+          // "RandomFractalsInc.vscode-data-table"
         ],
         "settings": {
           // Uncomment if you want to use zsh as the default shell
