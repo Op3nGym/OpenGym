@@ -83,11 +83,11 @@
           // "microsoft-IsvExpTools.powerplatform-vscode",
   
           // Recommended extensions - Markdown
-          "bierner.github-markdown-preview",
-          "DavidAnson.vscode-markdownlint",
-          "docsmsft.docs-linting",
-          "johnpapa.read-time",
-          "yzhang.markdown-all-in-one",
+          // "bierner.github-markdown-preview",
+          // "DavidAnson.vscode-markdownlint",
+          // "docsmsft.docs-linting",
+          // "johnpapa.read-time",
+          // "yzhang.markdown-all-in-one",
   
           // Required extensions
           "GitHub.copilot",
@@ -98,7 +98,7 @@
   
           // .NET Interactive
           "ms-dotnettools.dotnet-interactive-vscode",
-          "ms-python.python",
+          // "ms-python.python",
           // "ms-toolsai.jupyter",
           // "ms-toolsai.jupyter-keymap",
           // "ms-toolsai.jupyter-renderers",
