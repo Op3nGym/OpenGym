@@ -444,22 +444,18 @@ $RECYCLE.BIN/
 .idea/
 *.sln.iml
 
-##
-## Visual Studio Code
-##
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
 # built files
 **/bin
 **/obj
 # user-specific files
 **/*.user
 **/.vs
-**/.vscode
+**/.vscode/*
+!**/.vscode/settings.json
+!**/.vscode/tasks.json
+!**/.vscode/launch.json
+!**/.vscode/extensions.json
+
 # downloaded libraries
 **/node_modules
 # temp files
