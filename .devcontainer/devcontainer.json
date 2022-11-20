@@ -65,9 +65,12 @@
           "GitHub.vscode-pull-request-github",
   
           // Recommended extensions - Azure
-          "Azurite.azurite",
+          // "Azurite.azurite",
           "ms-azuretools.vscode-bicep",
-  
+          "ms-azuretools.vscode-docker",
+          "ms-azuretools.vscode-azurefunctions",
+          "ms-azuretools.vscode-dapr",
+          
           // Recommended extensions - Collaboration
           "eamodio.gitlens",
           "EditorConfig.EditorConfig",
@@ -97,7 +100,7 @@
           "VisualStudioExptTeam.vscodeintellicode",
   
           // .NET Interactive
-          "ms-dotnettools.dotnet-interactive-vscode",
+          // "ms-dotnettools.dotnet-interactive-vscode",
           // "ms-python.python",
           // "ms-toolsai.jupyter",
           // "ms-toolsai.jupyter-keymap",

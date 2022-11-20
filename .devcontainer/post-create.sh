@@ -40,11 +40,14 @@ npm i -g azure-functions-core-tools@4 --unsafe-perm true
 
 ## Azurite ##
 # Uncomment the below to install Azurite. Make sure you have installed node.js
-npm install -g azurite
+# npm install -g azurite
 
 ## AZURE STATIC WEB APPS CLI ##
 # Uncomment the below to install Azure Static Web Apps CLI. Make sure you have installed node.js
 npm install -g @azure/static-web-apps-cli
+
+## Install dapr cli
+wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh -O - | /bin/bash
 
 ## AZURE DEV CLI ##
 # Uncomment the below to install Azure Dev CLI. Make sure you have installed Azure CLI and GitHub CLI
