@@ -49,7 +49,13 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start:dev": "env-cmd -f .env.development react-scripts start",
+    "build:dev": "env-cmd -f .env.development npm run-script build",
+    "start:qa": "env-cmd -f .env.quality react-scripts start",
+    "build:qa": "env-cmd -f .env.quality npm run-script build",
+    "start:prod": "env-cmd -f .env.production react-scripts start",
+    "build:prod": "env-cmd -f .env.production npm run-script build"
   },
   "eslintConfig": {
     "extends": [
@@ -70,7 +76,8 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "4.4.0"
+    "@capacitor/cli": "4.4.0",
+    "@env-cmd": "^10.1.0"
   },
   "description": "An Ionic project",
   "engines": {
