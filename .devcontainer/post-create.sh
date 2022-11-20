@@ -46,6 +46,9 @@ npm i -g azure-functions-core-tools@4 --unsafe-perm true
 # Uncomment the below to install Azure Static Web Apps CLI. Make sure you have installed node.js
 npm install -g @azure/static-web-apps-cli
 
+## Install dapr cli
+wget -q https://raw.githubusercontent.com/dapr/cli/master/install/install.sh -O - | /bin/bash
+
 ## AZURE DEV CLI ##
 # Uncomment the below to install Azure Dev CLI. Make sure you have installed Azure CLI and GitHub CLI
 curl -fsSL https://aka.ms/install-azd.sh | bash
