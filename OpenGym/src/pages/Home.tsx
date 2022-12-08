@@ -7,16 +7,18 @@ const Home: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Ionic Blank</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <ExploreContainer />
+      <IonContent className="ion-padding">
+        The world is your oyster.
+        <p>
+          If you get lost, the{' '}
+          <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">
+            docs
+          </a>{' '}
+          will be your guide.
+        </p>
       </IonContent>
     </IonPage>
   );
