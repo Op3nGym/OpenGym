@@ -27,7 +27,7 @@ export const b2cPolicies = {
         //     authority: 'https://op3ngym.b2clogin.com/op3ngym.onmicrosoft.com/b2c_1_edit_profile_v2',
         // },
     },
-    authorityDomain: 'op3ngym.onmicrosoft.com',
+    authorityDomain: 'op3ngym.b2clogin.com',
 };
 
 

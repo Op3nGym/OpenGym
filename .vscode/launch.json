@@ -31,6 +31,12 @@
             "name": ".NET Core Attach",
             "type": "coreclr",
             "request": "attach"
+        },
+        {
+            "type": "msedge",
+            "request": "launch",
+            "name": "Launch my cool app",
+            "url": "http://localhost:8100"
         }
     ]
 }

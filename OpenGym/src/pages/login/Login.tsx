@@ -1,5 +1,5 @@
 import { useMsal } from "@azure/msal-react";
-import { loginRequest } from "../../authConfig"
+import { loginRequest } from "../../security/authConfig"
 import { IPublicClientApplication } from "@azure/msal-browser";
 import { IonButton } from "@ionic/react";
 
