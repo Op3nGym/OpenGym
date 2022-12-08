@@ -21,13 +21,12 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import Login from './pages/login/Login';
+import { Login } from './pages/login/Login';
 
 /* AUTH */
 import {
   AuthenticatedTemplate,
   UnauthenticatedTemplate,
-  useMsal,
 } from "@azure/msal-react";
 
 
@@ -37,15 +36,22 @@ const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-      <Route exact path="/login">
-          <Login />
-        </Route>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
+        <AuthenticatedTemplate>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/">
+            <Redirect to="/home" />
+          </Route>
+        </AuthenticatedTemplate>
+        <UnauthenticatedTemplate>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route exact path="/">
+            <Redirect to="/login" />
+          </Route>
+        </UnauthenticatedTemplate>
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

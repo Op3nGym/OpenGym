@@ -3,7 +3,7 @@
  * Licensed under the MIT License.
  */
 
-import { LogLevel } from "@azure/msal-browser";
+import { Configuration, LogLevel } from "@azure/msal-browser";
 
 /**
  * Enter here the user flows and custom policies for your B2C application
@@ -36,7 +36,7 @@ export const b2cPolicies = {
  * For a full list of MSAL.js configuration parameters, visit:
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/configuration.md 
  */
-export const msalConfig = {
+export const msalConfig: Configuration = {
     auth: {
         clientId: 'c9ef421d-6f99-4566-a6e3-7af10c764df8', // This is the ONLY mandatory field that you need to supply.
         authority: b2cPolicies.authorities.signUpSignIn.authority, // Choose SUSI as your default authority.
@@ -46,7 +46,7 @@ export const msalConfig = {
         navigateToLoginRequestUrl: false, // If "true", will navigate back to the original request location before processing the auth code response.
     },
     cache: {
-        cacheLocation: 'localStorage', // Configures cache location. "sessionStorage" is more secure, but "localStorage" gives you SSO between tabs.
+        cacheLocation: 'sessionStorage', // Configures cache location. "sessionStorage" is more secure, but "localStorage" gives you SSO between tabs.
         storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
     },
     system: {
@@ -81,11 +81,11 @@ export const msalConfig = {
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
  */
 export const protectedResources = {
-    apiTodoList: {
-        endpoint: 'http://localhost:5000/api/todolist',
+    apiCatalog: {
+        endpoint: 'http://localhost:5000/api',
         scopes: {
-            read: ['https://op3ngym.onmicrosoft.com/TodoList/ToDoList.Read'],
-            write: ['https://op3ngym.onmicrosoft.com/TodoList/ToDoList.ReadWrite'],
+            read: ['https://op3ngym.onmicrosoft.com/catalog-api-dev/catalog.read'],
+            write: ['https://op3ngym.onmicrosoft.com/catalog-api-dev/catalog.write'],
         },
     },
 };
@@ -97,5 +97,5 @@ export const protectedResources = {
  * https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes
  */
 export const loginRequest = {
-    scopes: [...protectedResources.apiTodoList.scopes.read, ...protectedResources.apiTodoList.scopes.write],
+    scopes: [...protectedResources.apiCatalog.scopes.read, ...protectedResources.apiCatalog.scopes.write],
 };
