@@ -23,6 +23,14 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import Login from './pages/login/Login';
 
+/* AUTH */
+import {
+  AuthenticatedTemplate,
+  UnauthenticatedTemplate,
+  useMsal,
+} from "@azure/msal-react";
+
+
 setupIonicReact();
 
 const App: React.FC = () => (
