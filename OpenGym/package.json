@@ -84,5 +84,6 @@
   "description": "An Ionic project",
   "engines": {
     "node": ">=18"
-  }
+  },
+  "packageManager": "yarn@3.3.0"
 }
