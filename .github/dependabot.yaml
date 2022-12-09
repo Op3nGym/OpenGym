@@ -6,12 +6,12 @@
 version: 2
 updates:
   - package-ecosystem: "nuget" # See documentation for possible values
-    directory: "/Backend/Catalog/Catalog.API/Catalog.API.csproj" # Location of package manifests
+    directory: "/Backend/Catalog/Catalog.API/" # Location of package manifests
     schedule:
       interval: "daily"
 
-  - package-ecosystem: "yarn" # See documentation for possible values
-    directory: "/OpenGym/package.json" # Location of package manifests
+  - package-ecosystem: "npm" # npm works for both npm and yarn
+    directory: "/OpenGym/" # Location of package manifests
     schedule:
       interval: "daily"
 
@@ -21,7 +21,7 @@ updates:
       interval: "daily"
 
   - package-ecosystem: "docker" # See documentation for possible values
-    directory: "/.devcontainer/Dockerfile" # Location of package manifests
+    directory: "/.devcontainer/" # Location of package manifests
     schedule:
       interval: "daily"
 
