@@ -1,0 +1,11 @@
+{
+    "navigationFallback": {
+      "rewrite": "/index.html"
+    },
+    "responseOverrides": {
+      "401": {
+        "redirect": "/login",
+        "statusCode": 302
+      }
+    }
+  }
