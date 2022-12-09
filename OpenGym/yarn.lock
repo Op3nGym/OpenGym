@@ -1594,12 +1594,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@capacitor/keyboard@npm:4.0.1":
-  version: 4.0.1
-  resolution: "@capacitor/keyboard@npm:4.0.1"
+"@capacitor/keyboard@npm:4.1.0":
+  version: 4.1.0
+  resolution: "@capacitor/keyboard@npm:4.1.0"
   peerDependencies:
     "@capacitor/core": ^4.0.0
-  checksum: cd635f2a69d6cbaa4dc8d60ff8a70fb8cb2db8c137ecee3eddcf9ead60d7fb70ff37a2af8cd28ed592cd60f2e738c02261e86da61ac2d7ea3a4ba94470ab39cd
+  checksum: ba73868921816e400054226198eeecc2bcfcc6607c790f0fb7bb9a7eddd45c7bc67a0ade4a8e4ac2a639a6b6d8cf88aac4fbf59ad55eab27139c4d1e9bc45f28
   languageName: node
   linkType: hard
 
@@ -3537,7 +3537,7 @@ __metadata:
     "@capacitor/cli": 4.4.0
     "@capacitor/core": 4.4.0
     "@capacitor/haptics": 4.0.1
-    "@capacitor/keyboard": 4.0.1
+    "@capacitor/keyboard": 4.1.0
     "@capacitor/status-bar": 4.0.1
     "@ionic/react": ^6.0.0
     "@ionic/react-router": ^6.0.0
