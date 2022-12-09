@@ -3564,7 +3564,7 @@ __metadata:
     workbox-background-sync: ^6.5.4
     workbox-broadcast-update: ^5.1.4
     workbox-cacheable-response: ^5.1.4
-    workbox-core: ^5.1.4
+    workbox-core: ^6.5.4
     workbox-expiration: ^5.1.4
     workbox-google-analytics: ^5.1.4
     workbox-navigation-preload: ^5.1.4
@@ -13374,7 +13374,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-core@npm:6.5.4":
+"workbox-core@npm:6.5.4, workbox-core@npm:^6.5.4":
   version: 6.5.4
   resolution: "workbox-core@npm:6.5.4"
   checksum: d973cc6c1c5fdbde7f6642632384c2e0de48f08228eb234db2c97a18a7e5422b483005767e7b447ea774abc0772dfc1edef2ef2b5df174df4d40ae61d4c49719
