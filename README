@@ -14,3 +14,19 @@ Link to Figma: https://www.figma.com/file/3pebDmor5Z697n1IpySU8E/OpenGym
 - mkdir newService and cd into it
 - eg. in Catalog: dotnet new webapi -o Catalog.API 
 - https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-api?tabs=csharpclient
+
+## Strongly inspired by: https://github.com/dotnet-architecture/eShopOnDapr/blob/dd60f7042c891e1cea67a487e1cf048ab6c3ce76/docs/run-eshop.md#run-eshopondapr-on-azure-container-apps
+## Run on Azure Container Apps
+
+Run the following commands from the `deploy\containerapps` folder to start install using the Azure CLI:
+
+```terminal
+az group create --name opengym --location westeurope
+az deployment group create --resource-group opengym --template-file main.bicep
+```
+
+# Health UI:
+
+# ```terminal
+# az containerapp show --name webstatus --resource-group opengym --query "properties.configuration.ingress.fqdn" --output tsv
+# ```
