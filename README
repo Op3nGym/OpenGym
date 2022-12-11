@@ -14,3 +14,6 @@ Link to Figma: https://www.figma.com/file/3pebDmor5Z697n1IpySU8E/OpenGym
 - mkdir newService and cd into it
 - eg. in Catalog: dotnet new webapi -o Catalog.API 
 - https://learn.microsoft.com/en-us/azure/active-directory-b2c/enable-authentication-web-api?tabs=csharpclient
+
+# Ref BE Architecture
+https://github.com/dotnet-architecture/eShopOnDapr
