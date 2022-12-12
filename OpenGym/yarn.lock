@@ -1539,12 +1539,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@capacitor/app@npm:4.1.0":
-  version: 4.1.0
-  resolution: "@capacitor/app@npm:4.1.0"
+"@capacitor/app@npm:4.1.1":
+  version: 4.1.1
+  resolution: "@capacitor/app@npm:4.1.1"
   peerDependencies:
     "@capacitor/core": ^4.0.0
-  checksum: 15735238afaff9082de4362e2215d4a16ccdd08a45785bf6d0df0e1eab2b656ab518fc472418e3ee58ee8e483b2d02206e525c96ba4dfe469fd4425f74485e8d
+  checksum: b64725478f8d7d5e900683cbb0f133bed29ec1dc3251cee94b2ff42495cfc39fcf6c41026167ed374d1406aea95cb9d48550c454a65266a9b597a3a8fc8aa729
   languageName: node
   linkType: hard
 
@@ -3533,7 +3533,7 @@ __metadata:
     "@babel/core": ^7.20.2
     "@babel/plugin-syntax-flow": ^7.18.6
     "@babel/plugin-transform-react-jsx": ^7.19.0
-    "@capacitor/app": 4.1.0
+    "@capacitor/app": 4.1.1
     "@capacitor/cli": 4.4.0
     "@capacitor/core": 4.4.0
     "@capacitor/haptics": 4.0.1
