@@ -3568,7 +3568,7 @@ __metadata:
     workbox-expiration: ^5.1.4
     workbox-google-analytics: ^5.1.4
     workbox-navigation-preload: ^6.5.4
-    workbox-precaching: ^5.1.4
+    workbox-precaching: ^6.5.4
     workbox-range-requests: ^6.5.4
     workbox-routing: ^6.5.4
     workbox-strategies: ^5.1.4
@@ -13431,7 +13431,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-precaching@npm:6.5.4":
+"workbox-precaching@npm:6.5.4, workbox-precaching@npm:^6.5.4":
   version: 6.5.4
   resolution: "workbox-precaching@npm:6.5.4"
   dependencies:
@@ -13439,15 +13439,6 @@ __metadata:
     workbox-routing: 6.5.4
     workbox-strategies: 6.5.4
   checksum: 15ef24ffb04edd13bcdfa6c4e7f64002551badce2d507031c343019b3bcdc569591fdff8f8e30cf1262d641d3eff611115bdda7b2ad0deb9d4ccef8f4be8bd20
-  languageName: node
-  linkType: hard
-
-"workbox-precaching@npm:^5.1.4":
-  version: 5.1.4
-  resolution: "workbox-precaching@npm:5.1.4"
-  dependencies:
-    workbox-core: ^5.1.4
-  checksum: 5593c5b9c3c928bb5d3b4c998625be610d05a3b55523e5abb0fc5f12ff2e32412114e933e60d54ba9e2661fa3cbbbab7e11f91c7170742cfe9525437d1c44ae8
   languageName: node
   linkType: hard
 
