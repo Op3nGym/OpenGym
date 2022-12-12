@@ -3562,7 +3562,7 @@ __metadata:
     typescript: ^4.8.x
     web-vitals: ^0.2.4
     workbox-background-sync: ^6.5.4
-    workbox-broadcast-update: ^5.1.4
+    workbox-broadcast-update: ^6.5.4
     workbox-cacheable-response: ^5.1.4
     workbox-core: ^6.5.4
     workbox-expiration: ^5.1.4
@@ -13293,21 +13293,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-broadcast-update@npm:6.5.4":
+"workbox-broadcast-update@npm:6.5.4, workbox-broadcast-update@npm:^6.5.4":
   version: 6.5.4
   resolution: "workbox-broadcast-update@npm:6.5.4"
   dependencies:
     workbox-core: 6.5.4
   checksum: 63cbab2012456871ffeae401e10b16668a0654fa3fa311743cf14e05b8719b797ac3afb47dc8955d87e24f0f1199a547b090bcfdbddd67191b07697d24ac5746
-  languageName: node
-  linkType: hard
-
-"workbox-broadcast-update@npm:^5.1.4":
-  version: 5.1.4
-  resolution: "workbox-broadcast-update@npm:5.1.4"
-  dependencies:
-    workbox-core: ^5.1.4
-  checksum: b56df2fde652c2efa8afbb8880562aaac6932be313ddcbbb688bb48beeb3164c928a644407f359168789a31592c765f63526608afe6cd803ac89402f786064d1
   languageName: node
   linkType: hard
 
