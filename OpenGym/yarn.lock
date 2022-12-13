@@ -1603,12 +1603,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@capacitor/status-bar@npm:4.0.1":
-  version: 4.0.1
-  resolution: "@capacitor/status-bar@npm:4.0.1"
+"@capacitor/status-bar@npm:4.1.1":
+  version: 4.1.1
+  resolution: "@capacitor/status-bar@npm:4.1.1"
   peerDependencies:
     "@capacitor/core": ^4.0.0
-  checksum: 1fdf09b0d1c3b987596dd0c55fc8dd53ad540359a33efd7dca99ec60085de540d173910af1e8d8c99ec22ff17265d413f0e833833709653ac8bd7f7106ae35c8
+  checksum: 10b13f87c168f23287d146237d8e62a33f9fe60420c09014ef5cde065f9903e73d34f35137c0ccba30ac91c3799e1aae4a95c49f85d99be6ef739e4f27cb5267
   languageName: node
   linkType: hard
 
@@ -3536,7 +3536,7 @@ __metadata:
     "@capacitor/core": 4.4.0
     "@capacitor/haptics": 4.0.1
     "@capacitor/keyboard": 4.1.0
-    "@capacitor/status-bar": 4.0.1
+    "@capacitor/status-bar": 4.1.1
     "@ionic/react": ^6.0.0
     "@ionic/react-router": ^6.0.0
     "@testing-library/dom": ^8.19.0
