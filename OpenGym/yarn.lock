@@ -2730,14 +2730,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@testing-library/user-event@npm:^12.6.3":
-  version: 12.8.3
-  resolution: "@testing-library/user-event@npm:12.8.3"
-  dependencies:
-    "@babel/runtime": ^7.12.5
+"@testing-library/user-event@npm:^14.4.3":
+  version: 14.4.3
+  resolution: "@testing-library/user-event@npm:14.4.3"
   peerDependencies:
     "@testing-library/dom": ">=7.21.4"
-  checksum: c9fb5ee07cbe79ddf32d81e1a353e556d02a1f1619456ccfad6abcdf1b7db400fdc9d7a8e0be3994f456e7135a0dfb7fa10b29fb98a0f5fc417b99fce0ce8166
+  checksum: 852c48ea6db1c9471b18276617c84fec4320771e466cd58339a732ca3fd73ad35e5a43ae14f51af51a8d0a150dcf60fcaab049ef367871207bea8f92c4b8195e
   languageName: node
   linkType: hard
 
@@ -3544,7 +3542,7 @@ __metadata:
     "@testing-library/dom": ^8.19.0
     "@testing-library/jest-dom": ^5.11.9
     "@testing-library/react": ^13.3.0
-    "@testing-library/user-event": ^12.6.3
+    "@testing-library/user-event": ^14.4.3
     "@types/jest": ^29.2.4
     "@types/node": ^12.19.15
     "@types/react": ^18.0.17
@@ -3572,7 +3570,7 @@ __metadata:
     workbox-range-requests: ^6.5.4
     workbox-routing: ^6.5.4
     workbox-strategies: ^5.1.4
-    workbox-streams: ^5.1.4
+    workbox-streams: ^6.5.4
   languageName: unknown
   linkType: soft
 
@@ -13502,23 +13500,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-streams@npm:6.5.4":
+"workbox-streams@npm:6.5.4, workbox-streams@npm:^6.5.4":
   version: 6.5.4
   resolution: "workbox-streams@npm:6.5.4"
   dependencies:
     workbox-core: 6.5.4
     workbox-routing: 6.5.4
   checksum: efd6917ead915011be2b25dc3ebbb9d051dbd10ba2d91cdaec36ca742360e2c33627564653fc40f336dee874d501e94bcc4a25d1b65eaf5a6ee5f1a8b894af44
-  languageName: node
-  linkType: hard
-
-"workbox-streams@npm:^5.1.4":
-  version: 5.1.4
-  resolution: "workbox-streams@npm:5.1.4"
-  dependencies:
-    workbox-core: ^5.1.4
-    workbox-routing: ^5.1.4
-  checksum: daaedb22dae6eb4723e7a21d758854adb36b75f1fa2453a914b6768628d91555e3db76fccb70a101f5cf1a39056e783eab1c8b0f4a59649f7ef4fad173c6f7d3
   languageName: node
   linkType: hard
 
