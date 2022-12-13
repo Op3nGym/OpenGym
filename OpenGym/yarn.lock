@@ -3572,7 +3572,7 @@ __metadata:
     workbox-range-requests: ^6.5.4
     workbox-routing: ^6.5.4
     workbox-strategies: ^5.1.4
-    workbox-streams: ^5.1.4
+    workbox-streams: ^6.5.4
   languageName: unknown
   linkType: soft
 
@@ -13502,23 +13502,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-streams@npm:6.5.4":
+"workbox-streams@npm:6.5.4, workbox-streams@npm:^6.5.4":
   version: 6.5.4
   resolution: "workbox-streams@npm:6.5.4"
   dependencies:
     workbox-core: 6.5.4
     workbox-routing: 6.5.4
   checksum: efd6917ead915011be2b25dc3ebbb9d051dbd10ba2d91cdaec36ca742360e2c33627564653fc40f336dee874d501e94bcc4a25d1b65eaf5a6ee5f1a8b894af44
-  languageName: node
-  linkType: hard
-
-"workbox-streams@npm:^5.1.4":
-  version: 5.1.4
-  resolution: "workbox-streams@npm:5.1.4"
-  dependencies:
-    workbox-core: ^5.1.4
-    workbox-routing: ^5.1.4
-  checksum: daaedb22dae6eb4723e7a21d758854adb36b75f1fa2453a914b6768628d91555e3db76fccb70a101f5cf1a39056e783eab1c8b0f4a59649f7ef4fad173c6f7d3
   languageName: node
   linkType: hard
 
