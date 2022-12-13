@@ -3564,7 +3564,7 @@ __metadata:
     workbox-cacheable-response: ^5.1.4
     workbox-core: ^6.5.4
     workbox-expiration: ^5.1.4
-    workbox-google-analytics: ^5.1.4
+    workbox-google-analytics: ^6.5.4
     workbox-navigation-preload: ^6.5.4
     workbox-precaching: ^6.5.4
     workbox-range-requests: ^6.5.4
@@ -13282,15 +13282,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-background-sync@npm:^5.1.4":
-  version: 5.1.4
-  resolution: "workbox-background-sync@npm:5.1.4"
-  dependencies:
-    workbox-core: ^5.1.4
-  checksum: 14655d0254813d2580935c88fe4768eb4794158a3c0700505aa06784dcd8d7498563e8b55152f0a4afb609163e76787a3a3eb61813b810bd76830c866d6ceb9e
-  languageName: node
-  linkType: hard
-
 "workbox-broadcast-update@npm:6.5.4, workbox-broadcast-update@npm:^6.5.4":
   version: 6.5.4
   resolution: "workbox-broadcast-update@npm:6.5.4"
@@ -13396,7 +13387,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-google-analytics@npm:6.5.4":
+"workbox-google-analytics@npm:6.5.4, workbox-google-analytics@npm:^6.5.4":
   version: 6.5.4
   resolution: "workbox-google-analytics@npm:6.5.4"
   dependencies:
@@ -13405,18 +13396,6 @@ __metadata:
     workbox-routing: 6.5.4
     workbox-strategies: 6.5.4
   checksum: fcce5e313780cb4f74ac962c4809fe04f9a93d3d3905d282552a2cbe6d5c6c1b8744641fe7c57d1e4b62754b90c56155e97e589712f99f6a4cab750731d60b93
-  languageName: node
-  linkType: hard
-
-"workbox-google-analytics@npm:^5.1.4":
-  version: 5.1.4
-  resolution: "workbox-google-analytics@npm:5.1.4"
-  dependencies:
-    workbox-background-sync: ^5.1.4
-    workbox-core: ^5.1.4
-    workbox-routing: ^5.1.4
-    workbox-strategies: ^5.1.4
-  checksum: 2783e93f8a5aeccc038f51a9960c05aebd104fd8d113b5fd78a09bac2da8ed8e2be4c9fd7d8a6751682301d6b5e36ba055240a74a3591b4e887aabb2784cd531
   languageName: node
   linkType: hard
 
