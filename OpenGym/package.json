@@ -44,7 +44,7 @@
     "workbox-range-requests": "^6.5.4",
     "workbox-routing": "^6.5.4",
     "workbox-strategies": "^5.1.4",
-    "workbox-streams": "^5.1.4"
+    "workbox-streams": "^6.5.4"
   },
   "resolutions": {
     "nth-check": "^2.0.1"
