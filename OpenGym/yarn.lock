@@ -1578,12 +1578,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@capacitor/haptics@npm:4.0.1":
-  version: 4.0.1
-  resolution: "@capacitor/haptics@npm:4.0.1"
+"@capacitor/haptics@npm:4.1.0":
+  version: 4.1.0
+  resolution: "@capacitor/haptics@npm:4.1.0"
   peerDependencies:
     "@capacitor/core": ^4.0.0
-  checksum: ceb50b6a1e8aa39ece870a4bb12042f9372eb4acc8bd90966a074a03484c54c50238dbaf8e818011b0c85f9ea7d897a86b6195c9e5197f8df557e69f88a241c1
+  checksum: 72b7ad274d5b102e7433cd6d406a7b09ae351fe2767ff4c1dd28f81176e48c909b3b378b94425374236fc314b0d579750b07994a18732849e42c3f6c56f4c947
   languageName: node
   linkType: hard
 
@@ -3413,7 +3413,7 @@ __metadata:
     "@capacitor/app": 4.1.1
     "@capacitor/cli": 4.6.1
     "@capacitor/core": 4.6.1
-    "@capacitor/haptics": 4.0.1
+    "@capacitor/haptics": 4.1.0
     "@capacitor/keyboard": 4.1.0
     "@capacitor/status-bar": 4.1.1
     "@ionic/react": ^6.4.1
