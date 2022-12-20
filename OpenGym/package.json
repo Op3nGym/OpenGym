@@ -14,7 +14,7 @@
     "@capacitor/keyboard": "4.1.0",
     "@capacitor/status-bar": "4.1.1",
     "@ionic/react": "^6.0.0",
-    "@ionic/react-router": "^6.0.0",
+    "@ionic/react-router": "^6.4.1",
     "@testing-library/dom": "^8.19.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^13.3.0",
