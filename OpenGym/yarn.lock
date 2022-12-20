@@ -3588,7 +3588,7 @@ __metadata:
     workbox-broadcast-update: ^6.5.4
     workbox-cacheable-response: ^5.1.4
     workbox-core: ^6.5.4
-    workbox-expiration: ^5.1.4
+    workbox-expiration: ^6.5.4
     workbox-google-analytics: ^6.5.4
     workbox-navigation-preload: ^6.5.4
     workbox-precaching: ^6.5.4
@@ -13393,22 +13393,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"workbox-expiration@npm:6.5.4":
+"workbox-expiration@npm:6.5.4, workbox-expiration@npm:^6.5.4":
   version: 6.5.4
   resolution: "workbox-expiration@npm:6.5.4"
   dependencies:
     idb: ^7.0.1
     workbox-core: 6.5.4
   checksum: 4b012b69ceafeb5afb3dd6c5c9abe6d55f2eb70666ab603bd78ff839f602336e7493990f729d507ded1fa505b852a5f9135f63afb75b9554c8f948e571143fce
-  languageName: node
-  linkType: hard
-
-"workbox-expiration@npm:^5.1.4":
-  version: 5.1.4
-  resolution: "workbox-expiration@npm:5.1.4"
-  dependencies:
-    workbox-core: ^5.1.4
-  checksum: c4648a008d19ee1281d5d588e10f14bd01530d8601c6ebf27e63b109663530fd381709539f1dd8a32e75d68a04e40e5f31ec6fbcc9ea052ee39000a2d76ade50
   languageName: node
   linkType: hard
 
