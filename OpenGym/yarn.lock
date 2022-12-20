@@ -3583,7 +3583,7 @@ __metadata:
     react-router-dom: ^5.2.0
     react-scripts: ^5.0.0
     typescript: ^4.8.x
-    web-vitals: ^0.2.4
+    web-vitals: ^3.1.0
     workbox-background-sync: ^6.5.4
     workbox-broadcast-update: ^6.5.4
     workbox-cacheable-response: ^5.1.4
@@ -12994,10 +12994,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^0.2.4":
-  version: 0.2.4
-  resolution: "web-vitals@npm:0.2.4"
-  checksum: 128a4e87730b0a02fb6af3eef7d31f9a79b4646e83cfe4465aa8ce6054fe16f7b1f4125a384f1b4f039091bd9513cb54b4e559c0b10ae953c01900786a16b1c2
+"web-vitals@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "web-vitals@npm:3.1.0"
+  checksum: 867161fd16e22b39720c8da3a5976ab08f414490123d94543b427832354bcdd36c64ff589a2c8de636cbe9593c5121e4a9a804d40b34a6e2b1c4cf275c5ba8e2
   languageName: node
   linkType: hard
 
