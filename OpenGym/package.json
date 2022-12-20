@@ -32,7 +32,7 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "typescript": "^4.8.x",
-    "web-vitals": "^0.2.4",
+    "web-vitals": "^3.1.0",
     "workbox-background-sync": "^6.5.4",
     "workbox-broadcast-update": "^6.5.4",
     "workbox-cacheable-response": "^5.1.4",
