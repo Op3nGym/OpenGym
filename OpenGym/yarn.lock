@@ -1857,22 +1857,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/react-router@npm:^6.0.0":
-  version: 6.4.0
-  resolution: "@ionic/react-router@npm:6.4.0"
+"@ionic/core@npm:6.4.1":
+  version: 6.4.1
+  resolution: "@ionic/core@npm:6.4.1"
   dependencies:
-    "@ionic/react": 6.4.0
+    "@stencil/core": ^2.18.0
+    ionicons: ^6.0.4
+    tslib: ^2.1.0
+  checksum: f24ef3a801545160cd157af5791dc89419afbbf2c4c57b60bbafa6a95253a5c37691f2a943e7623f2a54ba68f9a8a37116f9e4b86961bfde8d22c29694a19a9b
+  languageName: node
+  linkType: hard
+
+"@ionic/react-router@npm:^6.4.1":
+  version: 6.4.1
+  resolution: "@ionic/react-router@npm:6.4.1"
+  dependencies:
+    "@ionic/react": 6.4.1
     tslib: "*"
   peerDependencies:
     react: ">=16.8.6"
     react-dom: ">=16.8.6"
     react-router: ^5.0.1
     react-router-dom: ^5.0.1
-  checksum: 948cb292b42382f9ebedfc156cb8daa092f4777fce04dc9e51cb7619168dca1f5a6ed297aadfda97bc2554c8d7ad4955a07a4a965b07e19d236694e7c2dfa534
+  checksum: 36f9b05c2e3b4706d0ec6fee6b7fcda7d2658bd2d42cb626cf7e9d5aab8743d60e039fb0a6ebb71f2ea13e367c2b5ba6692ea6f45360d6d549b0b426f610a6c5
   languageName: node
   linkType: hard
 
-"@ionic/react@npm:6.4.0, @ionic/react@npm:^6.0.0":
+"@ionic/react@npm:6.4.1":
+  version: 6.4.1
+  resolution: "@ionic/react@npm:6.4.1"
+  dependencies:
+    "@ionic/core": 6.4.1
+    ionicons: ^6.0.2
+    tslib: "*"
+  peerDependencies:
+    react: ">=16.8.6"
+    react-dom: ">=16.8.6"
+  checksum: be263b32b3986f2dee5fed9130ba2ee44844bb50d9506e2d566714bcd2013341ee39c089cee71ea7caabcd8565b0401eaf293fc3d384023c5cea5ba9d59a3748
+  languageName: node
+  linkType: hard
+
+"@ionic/react@npm:^6.0.0":
   version: 6.4.0
   resolution: "@ionic/react@npm:6.4.0"
   dependencies:
@@ -3538,7 +3563,7 @@ __metadata:
     "@capacitor/keyboard": 4.1.0
     "@capacitor/status-bar": 4.1.1
     "@ionic/react": ^6.0.0
-    "@ionic/react-router": ^6.0.0
+    "@ionic/react-router": ^6.4.1
     "@testing-library/dom": ^8.19.0
     "@testing-library/jest-dom": ^5.11.9
     "@testing-library/react": ^13.3.0
