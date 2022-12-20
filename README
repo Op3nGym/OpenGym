@@ -30,3 +30,5 @@ az deployment group create --resource-group opengym --template-file main.bicep
 # ```terminal
 # az containerapp show --name webstatus --resource-group opengym --query "properties.configuration.ingress.fqdn" --output tsv
 # ```
+
+git config --global user.name "Your Name" git config --global user.email "youremail@yourdomain.com"
