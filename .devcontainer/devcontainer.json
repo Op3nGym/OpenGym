@@ -22,6 +22,10 @@
     ],
   
     "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker": {
+        "version": "latest"
+      },
+
       // Uncomment the below to install Azure CLI
       "ghcr.io/devcontainers/features/azure-cli:1": {
         "version": "latest"
