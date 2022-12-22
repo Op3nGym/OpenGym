@@ -1264,7 +1264,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/plugin-transform-react-jsx@npm:^7.18.6, @babel/plugin-transform-react-jsx@npm:^7.19.0":
+"@babel/plugin-transform-react-jsx@npm:^7.18.6":
   version: 7.19.0
   resolution: "@babel/plugin-transform-react-jsx@npm:7.19.0"
   dependencies:
@@ -1276,6 +1276,21 @@ __metadata:
   peerDependencies:
     "@babel/core": ^7.0.0-0
   checksum: d7d6f0b8f24b1f6b7cf8062c4e91c59af82489a993e51859bd49c2d62a2d2b77fd40b02a9a1d0e6d874cf4ce56a05fa3564b964587d00c94ebc62593524052ec
+  languageName: node
+  linkType: hard
+
+"@babel/plugin-transform-react-jsx@npm:^7.20.7":
+  version: 7.20.7
+  resolution: "@babel/plugin-transform-react-jsx@npm:7.20.7"
+  dependencies:
+    "@babel/helper-annotate-as-pure": ^7.18.6
+    "@babel/helper-module-imports": ^7.18.6
+    "@babel/helper-plugin-utils": ^7.20.2
+    "@babel/plugin-syntax-jsx": ^7.18.6
+    "@babel/types": ^7.20.7
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: 13ecbd1da582177f76ebd74d685947e703a3dcf8bd39cbc62784253201c6f7a667f3573932f6f20602dbcaf077451bf9dd3571892e3ccf4c7176add6358cd641
   languageName: node
   linkType: hard
 
@@ -3534,7 +3549,7 @@ __metadata:
     "@azure/msal-react": ^1.5.1
     "@babel/core": ^7.20.7
     "@babel/plugin-syntax-flow": ^7.18.6
-    "@babel/plugin-transform-react-jsx": ^7.19.0
+    "@babel/plugin-transform-react-jsx": ^7.20.7
     "@capacitor/app": 4.1.1
     "@capacitor/cli": 4.6.1
     "@capacitor/core": 4.6.1
