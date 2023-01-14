@@ -28,29 +28,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/msal-browser@npm:^2.32.1":
-  version: 2.32.1
-  resolution: "@azure/msal-browser@npm:2.32.1"
+"@azure/msal-browser@npm:^2.32.2":
+  version: 2.32.2
+  resolution: "@azure/msal-browser@npm:2.32.2"
   dependencies:
-    "@azure/msal-common": ^9.0.1
-  checksum: 3afc8aa8c3dcf17a348cc69c6e15db5c6d7d89cf656b0c585687a8885db8f82340cc38a9d9c842e2871929b7c31ce7e3c2016385153a7ba68b7d8f8b1729368f
+    "@azure/msal-common": ^9.0.2
+  checksum: a88608160bc7ed27137fc7325f804d9b807d1fb0b1708a263c49f62ef4bb8bd6fa231b078a7bed4a38e3ebd815f8395c915253d77872934b4ea603aee42fe9ad
   languageName: node
   linkType: hard
 
-"@azure/msal-common@npm:^9.0.1":
-  version: 9.0.1
-  resolution: "@azure/msal-common@npm:9.0.1"
-  checksum: 2e23a356c5662c999bdb1ca9878a265ff15711f78bdb701c9f0b1c4667c107e45e4abb04fb7b5e27f9d9df788604fb0ef435639d29a4e791486ed7f53ac75095
+"@azure/msal-common@npm:^9.0.2":
+  version: 9.0.2
+  resolution: "@azure/msal-common@npm:9.0.2"
+  checksum: 5a44d23b1d0f80d3e2221d157c1bd48bdfd19f5a4ac2fc58c73c52ffd25868c1760ea27ad0408931e07f552adc19764757bf91f7bec59258d9d931274df15657
   languageName: node
   linkType: hard
 
-"@azure/msal-react@npm:^1.5.1":
-  version: 1.5.1
-  resolution: "@azure/msal-react@npm:1.5.1"
+"@azure/msal-react@npm:^1.5.2":
+  version: 1.5.2
+  resolution: "@azure/msal-react@npm:1.5.2"
   peerDependencies:
-    "@azure/msal-browser": ^2.32.1
+    "@azure/msal-browser": ^2.32.2
     react: ^16.8.0 || ^17 || ^18
-  checksum: 34678ab6cb300e9bb9149edad1c152add4c8e1623c0dcb573498294c2c6d207b71052de3a0deed3adbdfeb4b2752db86059c1f5d9eab8d9f8cfe93003b81d50a
+  checksum: a324120ae24afb3afdbc0ed24693d0f49e3f71706a71f3080a84e7a84a67c711218d053322d094cc958ac5982fa7cfdf0255c9f6c3f538951aa346cc9c4ae504
   languageName: node
   linkType: hard
 
@@ -3563,8 +3563,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "OpenGym@workspace:."
   dependencies:
-    "@azure/msal-browser": ^2.32.1
-    "@azure/msal-react": ^1.5.1
+    "@azure/msal-browser": ^2.32.2
+    "@azure/msal-react": ^1.5.2
     "@babel/core": ^7.20.12
     "@babel/plugin-syntax-flow": ^7.18.6
     "@babel/plugin-transform-react-jsx": ^7.20.7
