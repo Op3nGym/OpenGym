@@ -2008,6 +2008,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ionic/core@npm:6.4.2":
+  version: 6.4.2
+  resolution: "@ionic/core@npm:6.4.2"
+  dependencies:
+    "@stencil/core": ^2.18.0
+    ionicons: ^6.0.4
+    tslib: ^2.1.0
+  checksum: 6245839777c24a252b429e6313cd45697f52c88569374a956d6b27e8b3a8abb69fdc57bd11ce603cddf387126110d1d24cc32308a01dd2137a5f3456725c93f2
+  languageName: node
+  linkType: hard
+
 "@ionic/react-router@npm:^6.4.1":
   version: 6.4.1
   resolution: "@ionic/react-router@npm:6.4.1"
@@ -2023,7 +2034,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/react@npm:6.4.1, @ionic/react@npm:^6.4.1":
+"@ionic/react@npm:6.4.1":
   version: 6.4.1
   resolution: "@ionic/react@npm:6.4.1"
   dependencies:
@@ -2034,6 +2045,20 @@ __metadata:
     react: ">=16.8.6"
     react-dom: ">=16.8.6"
   checksum: be263b32b3986f2dee5fed9130ba2ee44844bb50d9506e2d566714bcd2013341ee39c089cee71ea7caabcd8565b0401eaf293fc3d384023c5cea5ba9d59a3748
+  languageName: node
+  linkType: hard
+
+"@ionic/react@npm:^6.4.2":
+  version: 6.4.2
+  resolution: "@ionic/react@npm:6.4.2"
+  dependencies:
+    "@ionic/core": 6.4.2
+    ionicons: ^6.0.2
+    tslib: "*"
+  peerDependencies:
+    react: ">=16.8.6"
+    react-dom: ">=16.8.6"
+  checksum: b3e6a96ccccd825f115d2f52870b2e3c740c9fc0211c6f840e8c4586a2539d43dc7347399ea2d48316addbd0a0535dfd7cfdbd936bc0c2f984775f744ffd81d7
   languageName: node
   linkType: hard
 
@@ -3574,7 +3599,7 @@ __metadata:
     "@capacitor/haptics": 4.1.0
     "@capacitor/keyboard": 4.1.0
     "@capacitor/status-bar": 4.1.1
-    "@ionic/react": ^6.4.1
+    "@ionic/react": ^6.4.2
     "@ionic/react-router": ^6.4.1
     "@types/node": ^18.11.18
     "@types/react": ^18.0.26
