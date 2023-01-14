@@ -464,3 +464,4 @@ $RECYCLE.BIN/
 *.orig
 # secrets
 .env
+Backend/Catalog/Catalog.API/uni.db

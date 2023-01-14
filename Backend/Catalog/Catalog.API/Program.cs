@@ -1,25 +1,51 @@
+using ContosoUniversity;
+using ContosoUniversity.Data;
+using ContosoUniversity.Types;
+
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<SchoolContext>();
 
-// Add services to the container.
-
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services
+    .AddGraphQLServer()
+    .AddQueryType<Query>()
+    .AddMutationType()
+        .AddTypeExtension<CreateCourseMutation>()
+        .AddTypeExtension<EnrollStudentMutation>()
+        .AddTypeExtension<GradeStudentMutation>()
+        .AddTypeExtension<RegisterStudentMutation>()
+    .ConfigureResolverCompiler(c => c.AddService<SchoolContext>())
+    .AddFiltering()
+    .AddSorting()
+    .AddProjections();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.MapGraphQL();
+
+await using (var serviceScope = app.Services.CreateAsyncScope())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    var context = serviceScope.ServiceProvider.GetRequiredService<SchoolContext>();
+    if (await context.Database.EnsureCreatedAsync())
+    {
+        context.Courses.Add(new Course
+        {
+            Title = "Computer Science",
+            Enrollments = new List<Enrollment>
+            {
+                new Enrollment
+                {
+                    Student = new Student
+                    {
+                        LastName = "Doe",
+                        FirstName = "John",
+                        EnrollmentDate = DateTime.Now
+                    }
+                }
+            }
+        });
+
+        await context.SaveChangesAsync();
+    }
 }
 
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
-
-app.Run();
+await app.RunAsync();
