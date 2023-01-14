@@ -34,3 +34,7 @@ az deployment group create --resource-group opengym --template-file main.bicep
 # ```
 
 git config --global user.name "Your Name" git config --global user.email "youremail@yourdomain.com"
+
+
+# To explore the GraphQL HotChocolate API
+Install and use banana cake pop http://chillicream.com/docs/bananacakepop/v2/install
