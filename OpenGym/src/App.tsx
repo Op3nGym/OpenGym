@@ -1,5 +1,5 @@
 import { Redirect, Route, Switch } from 'react-router-dom';
-import { IonApp, setupIonicReact } from '@ionic/react';
+import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
 
@@ -21,48 +21,29 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import { Login } from './pages/login/Login';
+// import { Login } from './pages/login/Login';
 
 /* AUTH */
-import {
-  AuthenticatedTemplate,
-  UnauthenticatedTemplate,
-} from "@azure/msal-react";
 import { NoRouteMatch } from './components/NoRouteMatch';
 
 
 setupIonicReact();
 
 const App: React.FC = () => (
+  //Si dà ora sempre per scontato che gli utenti se sono arrivati qui, sono autenticati
   <IonApp>
     <IonReactRouter>
-      <AuthenticatedTemplate>
-        {/* <IonRouterOutlet> */}
-        <Switch>
-          <Route exact path="/home">
-            <Home />
-          </Route>
-          <Route exact path="/">
-            <Redirect to="/home" />
-          </Route>
-          <Route path="*">
-            <NoRouteMatch />
-          </Route>
-        {/* </IonRouterOutlet> */}
-        </Switch>
-      </AuthenticatedTemplate>
-      <UnauthenticatedTemplate>
-        {/* <IonRouterOutlet> */}
-        <Switch>
-          <Route exact path="/login">
-            <Login />
-          </Route>
-          <Route path="*">
-            <Redirect to="/login" />
-          </Route>
-        {/* </IonRouterOutlet> */}
-        </Switch>
-      </UnauthenticatedTemplate>
+      <IonRouterOutlet>
+        <Route exact path="/home">
+          <Home />
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/home" />
+        </Route>
+        <Route path="*">
+          <NoRouteMatch />
+        </Route>
+      </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
 );
