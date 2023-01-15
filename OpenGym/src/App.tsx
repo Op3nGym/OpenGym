@@ -1,4 +1,4 @@
-import { Redirect, Route, Switch } from 'react-router-dom';
+import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet, setupIonicReact } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
@@ -33,17 +33,15 @@ const App: React.FC = () => (
   //Si dà ora sempre per scontato che gli utenti se sono arrivati qui, sono autenticati
   <IonApp>
     <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
-        <Route path="*">
-          <NoRouteMatch />
-        </Route>
-      </IonRouterOutlet>
+      <Route exact path="/home">
+        <Home />
+      </Route>
+      <Route exact path="/">
+        <Redirect to="/home" />
+      </Route>
+      <Route path="*">
+        <NoRouteMatch />
+      </Route>
     </IonReactRouter>
   </IonApp>
 );
