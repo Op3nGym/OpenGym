@@ -22,7 +22,7 @@
     ],
   
     "features": {
-      "ghcr.io/devcontainers/features/docker-in-docker": {
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {
         "version": "latest"
       },
 
@@ -149,5 +149,8 @@
     "postCreateCommand": "/usr/bin/zsh ./.devcontainer/post-create.sh > ~/post-create.log",
   
     // Uncomment if you want to connect other than 'root'. More info: https://aka.ms/vscode-remote/containers/non-root.
-    "remoteUser": "vscode"
+    "remoteUser": "vscode",
+    "hostRequirements": {
+      "memory": "6gb"
+    }
   }
