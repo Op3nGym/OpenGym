@@ -7,8 +7,8 @@
       "appBuildCommand": "npm run build",
       "run": "npm start",
       "appDevserverUrl": "http://localhost:3000",
-      "apiDevserverUrl": "http://localhost:6000",
-      "apiLocation": "api"
+      "apiDevserverUrl": "http://localhost:6000"
+
     }
   }
 }

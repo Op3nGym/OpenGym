@@ -40,41 +40,63 @@
         {
             "appId": "catalog",
             "appPort": 6000,
-            "label": "dapr-debug",
+            "label": "dapr-debug-catalog",
             "type": "dapr",
             "dependsOn": "build"
         },
         {
             "appId": "catalog",
+            "label": "daprd-down-catalog",
+            "type": "daprd-down"
+        },
+        {
+            "type": "shell",
+            "label": "swa start",
+            "command": "swa start",
+            "isBackground": true,
+            "problemMatcher": [
+                {
+                    "pattern": [
+                        {
+                            "regexp": ".",
+                            "file": 1,
+                            "location": 2,
+                            "message": 3
+                        }
+                    ],
+                    "background": {
+                        "activeOnStart": true,
+                        "beginsPattern": ".",
+                        "endsPattern": "Waiting for .+6000 to be ready"
+                    }
+                }
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": []
+        },
+        {
+            "appId": "yarp",
+            "appPort": 5000,
+            "label": "dapr-debug",
+            "type": "dapr"
+        },
+        {
+            "appId": "yarp",
             "label": "daprd-down",
             "type": "daprd-down"
         },
         {
-			"type": "shell",
-			"label": "swa start",
-			"command": "swa start",
-			"isBackground": true,
-			"problemMatcher": [
-				{
-					"pattern": [
-						{
-							"regexp": ".",
-							"file": 1,
-							"location": 2,
-							"message": 3
-						}
-					],
-					"background": {
-						"activeOnStart": true,
-						"beginsPattern": ".",
-						"endsPattern": "Waiting for .+6000 to be ready",
-					}
-				}
-			],
-			"options": {
-				"cwd": "${workspaceFolder}"
-			},
-			"dependsOn": []
-		}
+            "appId": "yarp",
+            "appPort": 5000,
+            "label": "dapr-debug-yarp",
+            "type": "dapr"
+        },
+        {
+            "appId": "yarp",
+            "label": "daprd-down-yarp",
+            "type": "daprd-down"
+        }
     ]
 }
