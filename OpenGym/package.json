@@ -74,7 +74,7 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "4.6.1",
+    "@capacitor/cli": "4.6.2",
     "env-cmd": "^10.1.0",
     "react-scripts": "^5.0.1"
   },
