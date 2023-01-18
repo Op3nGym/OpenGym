@@ -2008,6 +2008,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ionic/core@npm:6.5.0":
+  version: 6.5.0
+  resolution: "@ionic/core@npm:6.5.0"
+  dependencies:
+    "@stencil/core": ^2.18.0
+    ionicons: ^6.1.1
+    tslib: ^2.1.0
+  checksum: d0e867faf6496f4820805429f453f5f46cd11a8b32334e2842be65322ff8c0770deb08130ca4422987e3af70afd27c426f171c9b6200fd937090d337be1c1142
+  languageName: node
+  linkType: hard
+
 "@ionic/react-router@npm:^6.4.2":
   version: 6.4.2
   resolution: "@ionic/react-router@npm:6.4.2"
@@ -2023,7 +2034,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/react@npm:6.4.2, @ionic/react@npm:^6.4.2":
+"@ionic/react@npm:6.4.2":
   version: 6.4.2
   resolution: "@ionic/react@npm:6.4.2"
   dependencies:
@@ -2034,6 +2045,20 @@ __metadata:
     react: ">=16.8.6"
     react-dom: ">=16.8.6"
   checksum: b3e6a96ccccd825f115d2f52870b2e3c740c9fc0211c6f840e8c4586a2539d43dc7347399ea2d48316addbd0a0535dfd7cfdbd936bc0c2f984775f744ffd81d7
+  languageName: node
+  linkType: hard
+
+"@ionic/react@npm:^6.5.0":
+  version: 6.5.0
+  resolution: "@ionic/react@npm:6.5.0"
+  dependencies:
+    "@ionic/core": 6.5.0
+    ionicons: ^6.1.1
+    tslib: "*"
+  peerDependencies:
+    react: ">=16.8.6"
+    react-dom: ">=16.8.6"
+  checksum: d387e7af40e986b0c6ad0510647098aee0f2ab9204346755766d48892a743823d6217c378b178ea0d4605c306fe9c635beda14eadbf99faff63054976bf9a89e
   languageName: node
   linkType: hard
 
@@ -3574,7 +3599,7 @@ __metadata:
     "@capacitor/haptics": 4.1.0
     "@capacitor/keyboard": 4.1.1
     "@capacitor/status-bar": 4.1.1
-    "@ionic/react": ^6.4.2
+    "@ionic/react": ^6.5.0
     "@ionic/react-router": ^6.4.2
     "@types/node": ^18.11.18
     "@types/react": ^18.0.26
@@ -7372,6 +7397,15 @@ __metadata:
   dependencies:
     "@stencil/core": ^2.18.0
   checksum: 2dd865c211d37d41aaff3b18eb3e9f0d2a48522ea102c232d9ada939e2e41a87b2e63c195cd4cadbf04a258f90a6b05ecc2250accf970d1dbc47241a1da36173
+  languageName: node
+  linkType: hard
+
+"ionicons@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "ionicons@npm:6.1.1"
+  dependencies:
+    "@stencil/core": ^2.18.0
+  checksum: aa4d79e3b6d545bd377ca181866f51ecdd854c0d2c720340782a8982a2fb4e882eab3c7dd2596ee8ec8fc1d6e9501addb1dd7d5c087edc3a2a35ff34902bf0f6
   languageName: node
   linkType: hard
 
