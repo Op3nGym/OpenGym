@@ -3581,7 +3581,7 @@ __metadata:
     "@types/react-dom": ^18.0.10
     "@types/react-router": ^5.1.19
     "@types/react-router-dom": ^5.3.3
-    axios: ^1.2.2
+    axios: ^1.2.3
     env-cmd: ^10.1.0
     ionicons: ^6.0.4
     react: ^18.2.0
@@ -4067,14 +4067,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.2.2":
-  version: 1.2.2
-  resolution: "axios@npm:1.2.2"
+"axios@npm:^1.2.3":
+  version: 1.2.3
+  resolution: "axios@npm:1.2.3"
   dependencies:
     follow-redirects: ^1.15.0
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: 6e357491b38426c5720f7328ecbafca3c643b03952c052d787570672ce7a9365717c2d64db4ce97cfbee3f830fa405101e360e14d0857ef7f96a9f4d814c4e03
+  checksum: 52802a1e317e8a6fd2c014aa06a6978ea8381142c98e91f2be5e9e213b77b541451e588e17a3d6db2d6e76faea82911239ca4981d7af959d67fb66018dab3ac9
   languageName: node
   linkType: hard
 
