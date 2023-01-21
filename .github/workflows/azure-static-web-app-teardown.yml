@@ -4,8 +4,6 @@ on:
   pull_request:
     types:
       - closed
-    branches:
-      - develop
 
 # Environment variables available to all jobs and steps in this workflow
 env:
