@@ -3583,7 +3583,7 @@ __metadata:
     "@types/react-router-dom": ^5.3.3
     axios: ^1.2.3
     env-cmd: ^10.1.0
-    ionicons: ^6.0.4
+    ionicons: ^6.1.1
     react: ^18.2.0
     react-dom: ^18.2.0
     react-router: ^5.2.0
@@ -7363,15 +7363,6 @@ __metadata:
     has: ^1.0.3
     side-channel: ^1.0.4
   checksum: 1944f92e981e47aebc98a88ff0db579fd90543d937806104d0b96557b10c1f170c51fb777b97740a8b6ddeec585fca8c39ae99fd08a8e058dfc8ab70937238bf
-  languageName: node
-  linkType: hard
-
-"ionicons@npm:^6.0.4":
-  version: 6.0.4
-  resolution: "ionicons@npm:6.0.4"
-  dependencies:
-    "@stencil/core": ^2.18.0
-  checksum: 2dd865c211d37d41aaff3b18eb3e9f0d2a48522ea102c232d9ada939e2e41a87b2e63c195cd4cadbf04a258f90a6b05ecc2250accf970d1dbc47241a1da36173
   languageName: node
   linkType: hard
 
