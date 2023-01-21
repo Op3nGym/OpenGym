@@ -1997,17 +1997,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/core@npm:6.4.2":
-  version: 6.4.2
-  resolution: "@ionic/core@npm:6.4.2"
-  dependencies:
-    "@stencil/core": ^2.18.0
-    ionicons: ^6.0.4
-    tslib: ^2.1.0
-  checksum: 6245839777c24a252b429e6313cd45697f52c88569374a956d6b27e8b3a8abb69fdc57bd11ce603cddf387126110d1d24cc32308a01dd2137a5f3456725c93f2
-  languageName: node
-  linkType: hard
-
 "@ionic/core@npm:6.5.0":
   version: 6.5.0
   resolution: "@ionic/core@npm:6.5.0"
@@ -2019,36 +2008,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/react-router@npm:^6.4.2":
-  version: 6.4.2
-  resolution: "@ionic/react-router@npm:6.4.2"
+"@ionic/react-router@npm:^6.5.0":
+  version: 6.5.0
+  resolution: "@ionic/react-router@npm:6.5.0"
   dependencies:
-    "@ionic/react": 6.4.2
+    "@ionic/react": 6.5.0
     tslib: "*"
   peerDependencies:
     react: ">=16.8.6"
     react-dom: ">=16.8.6"
     react-router: ^5.0.1
     react-router-dom: ^5.0.1
-  checksum: 5b62bc6ffe5ffe33341df7d537e449f5b58b3798c4e3b3f2c7e27b946111077349620f9b8f5c5d6724234a67b415a863d490f6c25fda27ba484c69ce382dabc5
+  checksum: 64bb3c4c788a3689a346c5258f953866085675d3d488d0dc812d5d852367cdd192e09e9b54c93ef5c6b072c3f4a60aa1e592ba94165ec618ad444e2a5a602b24
   languageName: node
   linkType: hard
 
-"@ionic/react@npm:6.4.2":
-  version: 6.4.2
-  resolution: "@ionic/react@npm:6.4.2"
-  dependencies:
-    "@ionic/core": 6.4.2
-    ionicons: ^6.0.2
-    tslib: "*"
-  peerDependencies:
-    react: ">=16.8.6"
-    react-dom: ">=16.8.6"
-  checksum: b3e6a96ccccd825f115d2f52870b2e3c740c9fc0211c6f840e8c4586a2539d43dc7347399ea2d48316addbd0a0535dfd7cfdbd936bc0c2f984775f744ffd81d7
-  languageName: node
-  linkType: hard
-
-"@ionic/react@npm:^6.5.0":
+"@ionic/react@npm:6.5.0, @ionic/react@npm:^6.5.0":
   version: 6.5.0
   resolution: "@ionic/react@npm:6.5.0"
   dependencies:
@@ -3600,7 +3575,7 @@ __metadata:
     "@capacitor/keyboard": 4.1.1
     "@capacitor/status-bar": 4.1.1
     "@ionic/react": ^6.5.0
-    "@ionic/react-router": ^6.4.2
+    "@ionic/react-router": ^6.5.0
     "@types/node": ^18.11.18
     "@types/react": ^18.0.26
     "@types/react-dom": ^18.0.10
@@ -7391,7 +7366,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ionicons@npm:^6.0.2, ionicons@npm:^6.0.4":
+"ionicons@npm:^6.0.4":
   version: 6.0.4
   resolution: "ionicons@npm:6.0.4"
   dependencies:
