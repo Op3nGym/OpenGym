@@ -1997,17 +1997,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/core@npm:6.5.0":
-  version: 6.5.0
-  resolution: "@ionic/core@npm:6.5.0"
-  dependencies:
-    "@stencil/core": ^2.18.0
-    ionicons: ^6.1.1
-    tslib: ^2.1.0
-  checksum: d0e867faf6496f4820805429f453f5f46cd11a8b32334e2842be65322ff8c0770deb08130ca4422987e3af70afd27c426f171c9b6200fd937090d337be1c1142
-  languageName: node
-  linkType: hard
-
 "@ionic/core@npm:6.5.1":
   version: 6.5.1
   resolution: "@ionic/core@npm:6.5.1"
@@ -2019,36 +2008,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/react-router@npm:^6.5.0":
-  version: 6.5.0
-  resolution: "@ionic/react-router@npm:6.5.0"
+"@ionic/react-router@npm:^6.5.1":
+  version: 6.5.1
+  resolution: "@ionic/react-router@npm:6.5.1"
   dependencies:
-    "@ionic/react": 6.5.0
+    "@ionic/react": 6.5.1
     tslib: "*"
   peerDependencies:
     react: ">=16.8.6"
     react-dom: ">=16.8.6"
     react-router: ^5.0.1
     react-router-dom: ^5.0.1
-  checksum: 64bb3c4c788a3689a346c5258f953866085675d3d488d0dc812d5d852367cdd192e09e9b54c93ef5c6b072c3f4a60aa1e592ba94165ec618ad444e2a5a602b24
+  checksum: 2cdf983a86c6e1bb346034f27c6e406be8079c6e82db93b5c70356d6fc641907b640976404f64f944324f7fe76548ceab70905eaf6baccc24734c8b318c76522
   languageName: node
   linkType: hard
 
-"@ionic/react@npm:6.5.0":
-  version: 6.5.0
-  resolution: "@ionic/react@npm:6.5.0"
-  dependencies:
-    "@ionic/core": 6.5.0
-    ionicons: ^6.1.1
-    tslib: "*"
-  peerDependencies:
-    react: ">=16.8.6"
-    react-dom: ">=16.8.6"
-  checksum: d387e7af40e986b0c6ad0510647098aee0f2ab9204346755766d48892a743823d6217c378b178ea0d4605c306fe9c635beda14eadbf99faff63054976bf9a89e
-  languageName: node
-  linkType: hard
-
-"@ionic/react@npm:^6.5.1":
+"@ionic/react@npm:6.5.1, @ionic/react@npm:^6.5.1":
   version: 6.5.1
   resolution: "@ionic/react@npm:6.5.1"
   dependencies:
@@ -3611,7 +3586,7 @@ __metadata:
     "@capacitor/keyboard": 4.1.1
     "@capacitor/status-bar": 4.1.1
     "@ionic/react": ^6.5.1
-    "@ionic/react-router": ^6.5.0
+    "@ionic/react-router": ^6.5.1
     "@types/node": ^18.11.18
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.10
