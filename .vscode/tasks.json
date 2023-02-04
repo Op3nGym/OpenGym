@@ -67,7 +67,7 @@
                     "background": {
                         "activeOnStart": true,
                         "beginsPattern": ".",
-                        "endsPattern": "Waiting for .+6000 to be ready"
+                        "endsPattern": "Waiting for .+5000 to be ready"
                     }
                 }
             ],
