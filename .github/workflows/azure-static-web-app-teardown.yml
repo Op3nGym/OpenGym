@@ -1,15 +1,9 @@
 name: Azure Static Web Apps Teardown
 
 on:
-  push:
-    branches:
-      - develop
-    paths:
-      - 'OpenGym/**'
   pull_request:
-    types: [opened, synchronize, reopened, closed]
-    branches:
-      - develop
+    types:
+      - closed
 
 # Environment variables available to all jobs and steps in this workflow
 env:
@@ -20,7 +14,7 @@ env:
 
 jobs:
   close_pull_request_job:
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     name: Close Pull Request Job
     steps:
