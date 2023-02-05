@@ -4,6 +4,7 @@ using ContosoUniversity.Types;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<SchoolContext>();
+builder.Services.AddHealthChecks();
 
 builder.Services
     .AddGraphQLServer()
@@ -20,6 +21,7 @@ builder.Services
 
 var app = builder.Build();
 
+app.MapHealthChecks("healthz");
 app.MapGraphQL();
 
 await using (var serviceScope = app.Services.CreateAsyncScope())

@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "f5fdca15-8ff5-4b3d-b1f3-ef72a9b4d5c3",
+		"name": "Local",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16124974"
+	},
+	"item": [
+		{
+			"name": "Direct Catalog Call",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query\r\n{\r\n    courses{\r\n        nodes{\r\n            title\r\n            courseId\r\n            credits\r\n        }\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6000/graphql/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"graphql",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Catalog Passing through Dapr",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "dapr-app-id",
+						"value": "catalog",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query\r\n{\r\n    courses{\r\n        nodes{\r\n            title\r\n            courseId\r\n            credits\r\n        }\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:36501/graphql/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "36501",
+					"path": [
+						"graphql",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Catalog Passing through YARP and Dapr",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query\r\n{\r\n    courses{\r\n        nodes{\r\n            title\r\n            courseId\r\n            credits\r\n        }\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/catalog/graphql/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"catalog",
+						"graphql",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Catalog Passing through SWA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query\r\n{\r\n    courses{\r\n        nodes{\r\n            title\r\n            courseId\r\n            credits\r\n        }\r\n    }\r\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4280/api/catalog/graphql/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4280",
+					"path": [
+						"api",
+						"catalog",
+						"graphql",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Healthz",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:6000/api/healthz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6000",
+					"path": [
+						"api",
+						"healthz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Healthz RP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4280/api/healthz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4280",
+					"path": [
+						"api",
+						"healthz"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check current authorization cookie",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4280/.auth/me/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4280",
+					"path": [
+						".auth",
+						"me",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,21 +1,27 @@
 {
     "version": "0.2.0",
     "configurations": [
-        //TODO - Add yarn and ionic serve for client
         {
-            // Use IntelliSense to find out which attributes exist for C# debugging
-            // Use hover for the description of the existing attributes
-            // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
-            "name": ".NET Core Launch (web)",
+            "name": "Launch Edge",
+            "request": "launch",
+            "type": "msedge",
+            "url": "http://localhost:4280",
+            "webRoot": "${workspaceFolder}",
+            "presentation": {
+                "hidden": true,
+                "group": "",
+                "order": 1
+            }
+        },
+        {
+            "name": "Debug YARP with Dapr",
             "type": "coreclr",
             "request": "launch",
-            "preLaunchTask": "build",
-            // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/Backend/Catalog/Catalog.API/bin/Debug/net7.0/Catalog.API.dll",
+            "preLaunchTask": "dapr-debug-yarp",
+            "program": "${workspaceFolder}/Backend/APIGateways/YARP/bin/Debug/net7.0/YARP.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/Backend/Catalog/Catalog.API",
+            "cwd": "${workspaceFolder}/Backend/APIGateways/YARP",
             "stopAtEntry": false,
-            // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
             "serverReadyAction": {
                 "action": "openExternally",
                 "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
@@ -23,20 +29,47 @@
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
-            "sourceFileMap": {
-                "/Views": "${workspaceFolder}/Views"
+            "postDebugTask": "daprd-down-yarp",
+            "presentation": {
+                "hidden": true,
+                "group": "",
+                "order": 1
             }
         },
         {
-            "name": ".NET Core Attach",
+            "name": "Debug Catalog with Dapr",
             "type": "coreclr",
-            "request": "attach"
-        },
-        {
-            "type": "msedge",
             "request": "launch",
-            "name": "Launch my cool app",
-            "url": "http://localhost:8100"
+            "preLaunchTask": "dapr-debug-catalog",
+            "program": "${workspaceFolder}/Backend/Catalog/Catalog.API/bin/Debug/net7.0/Catalog.API.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Backend/Catalog/Catalog.API",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "postDebugTask": "daprd-down-catalog",
+            "presentation": {
+                "hidden": true,
+                "group": "",
+                "order": 1
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch SWA + BE with Dapr",
+            "configurations": [
+                "Debug Catalog with Dapr",
+                "Debug YARP with Dapr",
+                "Launch Edge"
+            ],
+            "stopAll": true,
+            "preLaunchTask": "swa start"
         }
     ]
 }
