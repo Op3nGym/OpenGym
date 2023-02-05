@@ -17,6 +17,7 @@
             "name": "Debug YARP with Dapr",
             "type": "coreclr",
             "request": "launch",
+            "preLaunchTask": "dapr-debug-yarp",
             "program": "${workspaceFolder}/Backend/APIGateways/YARP/bin/Debug/net7.0/YARP.dll",
             "args": [],
             "cwd": "${workspaceFolder}/Backend/APIGateways/YARP",
@@ -28,9 +29,7 @@
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
-            "sourceFileMap": {
-                "/Views": "${workspaceFolder}/Views"
-            },
+            "postDebugTask": "daprd-down-yarp",
             "presentation": {
                 "hidden": true,
                 "group": "",
@@ -53,41 +52,12 @@
             "env": {
                 "ASPNETCORE_ENVIRONMENT": "Development"
             },
-            "sourceFileMap": {
-                "/Views": "${workspaceFolder}/Views"
-            },
             "postDebugTask": "daprd-down-catalog",
             "presentation": {
                 "hidden": true,
                 "group": "",
                 "order": 1
             }
-        },
-        {
-            "name": "Debug YARP with Dapr with Dapr",
-            "type": "coreclr",
-            "request": "launch",
-            "program": "${workspaceFolder}/Backend/APIGateways/YARP/bin/Debug/net7.0/YARP.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/Backend/APIGateways/YARP",
-            "stopAtEntry": false,
-            "serverReadyAction": {
-                "action": "openExternally",
-                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
-            },
-            "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
-            },
-            "sourceFileMap": {
-                "/Views": "${workspaceFolder}/Views"
-            },
-            "presentation": {
-                "hidden": true,
-                "group": "",
-                "order": 1
-            },
-            "preLaunchTask": "dapr-debug-yarp",
-            "postDebugTask": "daprd-down-yarp"
         }
     ],
     "compounds": [

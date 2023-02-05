@@ -36,7 +36,7 @@ az deployment group create --resource-group opengym --template-file main.bicep
 # az containerapp show --name webstatus --resource-group opengym --query "properties.configuration.ingress.fqdn" --output tsv
 # ```
 
-git config --global user.name "Your Name" git config --global user.email "youremail@yourdomain.com"
+git config --global user.name "" && git config --global user.email "youremail@yourdomain.com"
 
 
 # To explore the GraphQL HotChocolate API

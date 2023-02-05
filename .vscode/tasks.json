@@ -2,54 +2,6 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "build",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "build",
-                "${workspaceFolder}/Backend/Catalog/Catalog.API/Catalog.API.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "publish",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "publish",
-                "${workspaceFolder}/Backend/Catalog/Catalog.API/Catalog.API.csproj",
-                "/property:GenerateFullPaths=true",
-                "/consoleloggerparameters:NoSummary"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "label": "watch",
-            "command": "dotnet",
-            "type": "process",
-            "args": [
-                "watch",
-                "run",
-                "--project",
-                "${workspaceFolder}/Backend/Catalog/Catalog.API/Catalog.API.csproj"
-            ],
-            "problemMatcher": "$msCompile"
-        },
-        {
-            "appId": "catalog",
-            "appPort": 6000,
-            "label": "dapr-debug-catalog",
-            "type": "dapr",
-            "dependsOn": "build"
-        },
-        {
-            "appId": "catalog",
-            "label": "daprd-down-catalog",
-            "type": "daprd-down"
-        },
-        {
             "type": "shell",
             "label": "swa start",
             "command": "swa start",
@@ -76,22 +28,52 @@
             },
             "dependsOn": []
         },
+        // Catalog service configs
         {
-            "appId": "yarp",
-            "appPort": 5000,
-            "label": "dapr-debug",
-            "type": "dapr"
+            "label": "build-catalog",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Backend/Catalog/Catalog.API/Catalog.API.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
         },
         {
-            "appId": "yarp",
-            "label": "daprd-down",
+            "appId": "catalog",
+            "appPort": 6000,
+            "httpPort": 36502,
+            "label": "dapr-debug-catalog",
+            "type": "dapr",
+            "dependsOn": "build-catalog"
+        },
+        {
+            "appId": "catalog",
+            "label": "daprd-down-catalog",
             "type": "daprd-down"
         },
+        // YARP service configs
+        {
+            "label": "build-yarp",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Backend/APIGateways/YARP/YARP.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
         {
             "appId": "yarp",
             "appPort": 5000,
+            "httpPort": 36501,
             "label": "dapr-debug-yarp",
-            "type": "dapr"
+            "type": "dapr",
+            "dependsOn": "build-yarp"
         },
         {
             "appId": "yarp",
