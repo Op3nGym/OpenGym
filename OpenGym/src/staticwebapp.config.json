@@ -69,15 +69,15 @@
             "statusCode": 404
         },
         {
-            "route": "/*",
+            "route": "/api/*",
             "allowedRoles": [
+                "anonymous",
                 "authenticated"
             ]
         },
         {
-            "route": "/api/*",
+            "route": "/*",
             "allowedRoles": [
-                "anonymous",
                 "authenticated"
             ]
         }
