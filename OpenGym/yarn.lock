@@ -1699,9 +1699,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@capacitor/cli@npm:4.6.2":
-  version: 4.6.2
-  resolution: "@capacitor/cli@npm:4.6.2"
+"@capacitor/cli@npm:4.6.3":
+  version: 4.6.3
+  resolution: "@capacitor/cli@npm:4.6.3"
   dependencies:
     "@ionic/cli-framework-output": ^2.2.5
     "@ionic/utils-fs": ^3.1.6
@@ -1723,7 +1723,7 @@ __metadata:
   bin:
     cap: bin/capacitor
     capacitor: bin/capacitor
-  checksum: e4d6d9435db8e9b7b0c3be3482d237afddf5ae5edfda0d5a8af86c53f92e2b018e19fcf24b27aa57a49e3981d2f58f0f1e66bed76ded59946b8468274676bf91
+  checksum: 889a11d9d4ee713a34c60e9f703d4a95a42a73d3b1c98bbcd17c6bc57fb6078e67f5bcc4e86c5dd6f3c7cae09b3f894cbbf44d04f30388f8f04975c4a2405b3b
   languageName: node
   linkType: hard
 
@@ -3580,7 +3580,7 @@ __metadata:
     "@babel/plugin-syntax-flow": ^7.18.6
     "@babel/plugin-transform-react-jsx": ^7.20.13
     "@capacitor/app": 4.1.1
-    "@capacitor/cli": 4.6.2
+    "@capacitor/cli": 4.6.3
     "@capacitor/core": 4.6.3
     "@capacitor/haptics": 4.1.0
     "@capacitor/keyboard": 4.1.1
