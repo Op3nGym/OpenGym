@@ -2008,22 +2008,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/react-router@npm:^6.5.2":
-  version: 6.5.2
-  resolution: "@ionic/react-router@npm:6.5.2"
+"@ionic/core@npm:6.5.3":
+  version: 6.5.3
+  resolution: "@ionic/core@npm:6.5.3"
   dependencies:
-    "@ionic/react": 6.5.2
+    "@stencil/core": ^2.18.0
+    ionicons: ^6.1.1
+    tslib: ^2.1.0
+  checksum: a949e94914fc22af1e7f6059a89386c32dcc9740d40f783ff0b63268f98bc279c6400c1e2f0298d838b65a3fb6eda8b127e74b4606443157825200e03174c489
+  languageName: node
+  linkType: hard
+
+"@ionic/react-router@npm:^6.5.3":
+  version: 6.5.3
+  resolution: "@ionic/react-router@npm:6.5.3"
+  dependencies:
+    "@ionic/react": 6.5.3
     tslib: "*"
   peerDependencies:
     react: ">=16.8.6"
     react-dom: ">=16.8.6"
     react-router: ^5.0.1
     react-router-dom: ^5.0.1
-  checksum: 04854caaf9109b52db196d75bba22aa77aac65cc17ef3e6782b2ba6ea150647bc9fdfdd290521b9b8bf70162a1c481c19fc37f96d31bef29c2e577234116b7a0
+  checksum: 09db84e2928bfcfe84f313616aa74917eb4c9a237a03c9454842ded5b5c6c73696ff855c9d31d485bec261ed3cf81bc9035517519427c1cfac2a1d5c3a75c30e
   languageName: node
   linkType: hard
 
-"@ionic/react@npm:6.5.2, @ionic/react@npm:^6.5.2":
+"@ionic/react@npm:6.5.3":
+  version: 6.5.3
+  resolution: "@ionic/react@npm:6.5.3"
+  dependencies:
+    "@ionic/core": 6.5.3
+    ionicons: ^6.1.1
+    tslib: "*"
+  peerDependencies:
+    react: ">=16.8.6"
+    react-dom: ">=16.8.6"
+  checksum: 561cfe8709e92e5fa64116ad655c19232da5a7b9fc5bcebec123e567bcfe4ba24be6c04ca4feae42d333f741f4a78a5b4db5eaf2320a4c1635afbbeffcdee3cf
+  languageName: node
+  linkType: hard
+
+"@ionic/react@npm:^6.5.2":
   version: 6.5.2
   resolution: "@ionic/react@npm:6.5.2"
   dependencies:
@@ -3586,7 +3611,7 @@ __metadata:
     "@capacitor/keyboard": 4.1.1
     "@capacitor/status-bar": 4.1.1
     "@ionic/react": ^6.5.2
-    "@ionic/react-router": ^6.5.2
+    "@ionic/react-router": ^6.5.3
     "@types/node": ^18.11.19
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.10
