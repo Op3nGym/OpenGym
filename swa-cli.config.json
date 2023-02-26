@@ -4,9 +4,9 @@
     "open-gym": {
       "appLocation": "OpenGym",
       "outputLocation": "build",
-      "appBuildCommand": "npm run build",
-      "run": "npm start",
-      "appDevserverUrl": "http://localhost:3000",
+      "appBuildCommand": "yarn build",
+      "run": "yarn start",
+      "appDevserverUrl": "http://127.0.0.1:3000",
       "apiDevserverUrl": "http://localhost:5000"
     }
   }
