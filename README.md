@@ -1,7 +1,7 @@
 # OpenGym - Your best tool to menage your GYM
 
 ## Architecture image
-![Architecture](./docs/Architecture/Opengym-Architecture.svg)
+![Architecture](docs/Architecture/Opengym-Architecture.svg)
 
 ## Built with Ionic - React
 Link to Figma: https://www.figma.com/file/3pebDmor5Z697n1IpySU8E/OpenGym
