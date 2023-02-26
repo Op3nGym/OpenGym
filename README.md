@@ -12,6 +12,11 @@ Link to Figma: https://www.figma.com/file/3pebDmor5Z697n1IpySU8E/OpenGym
  step 1: yarn
  step 2: ionic serve
 
+## To create a new FE service:
+dapr init 
+- cd into Frontend
+- yarn compile, pointing to the new service config codegen file
+
 ## To create a new BE service:
 - cd into Backend
 - mkdir newService and cd into it

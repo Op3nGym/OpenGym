@@ -1,26 +1,31 @@
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import './Home.css';
-import { useQuery, gql } from '@apollo/client';
+import { ApolloClient, InMemoryCache, useQuery } from '@apollo/client';
+import { gql } from '../../src/__generated__/gql';
+const client = new ApolloClient({
+  uri: '/api/catalog/graphql',
+  cache: new InMemoryCache(),
+});
 
-//TODO https://www.apollographql.com/docs/react/development-testing/static-typing/
+//Docs: https://www.apollographql.com/docs/react/development-testing/static-typing/
 
-const GET_COURSES = gql`
+const GET_COURSES = gql(`
   query GetCourses {
     courses {
-      courseId
-      title
-      credits
+      nodes{
+        title
+        courseId
+        credits
+      }
     }
   }
-`;
+`);
 
 
 const Home: React.FC = () => {
-  const { loading, error, data } = useQuery(GET_COURSES);
+  const { loading, error, data } = useQuery(GET_COURSES, { client });
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error : {error.message}</p>;
-  const results = data.courses.map(({ courseId, title, credits }) => (
+  const results = data?.courses?.nodes?.map(({ courseId, title, credits }) => (
     <div key={courseId}>
       <h3>{title}</h3>
       <br />
@@ -29,6 +34,7 @@ const Home: React.FC = () => {
       <br />
     </div>
   ))
+  
   return (
     <IonPage>
       <IonHeader>
@@ -47,7 +53,11 @@ const Home: React.FC = () => {
         </p>
         <br/>
         <br/>
-        {results}
+        {
+         loading ? <p>Loading...</p> 
+         : error ? <p>Error : {error.message}</p>
+         : results
+        }
       </IonContent>
     </IonPage>
   );

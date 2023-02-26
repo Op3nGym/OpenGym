@@ -3,19 +3,12 @@ import { createRoot } from 'react-dom/client';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
-const client = new ApolloClient({
-  uri: '/api/catalog',
-  cache: new InMemoryCache(),
-});
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
 root.render(
   <React.StrictMode>
-    <ApolloProvider client={client}>
       <App />
-    </ApolloProvider>
   </React.StrictMode>
 );
 

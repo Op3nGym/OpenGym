@@ -1,5 +1,5 @@
 {
-  "name": "OpenGym",
+  "name": "opengym",
   "version": "0.0.1",
   "private": true,
   "dependencies": {
@@ -49,6 +49,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "compile": "graphql-codegen",
+    "watch": "graphql-codegen -w",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
     "eject": "react-scripts eject",
     "start:dev": "env-cmd -f .env.development react-scripts start",

@@ -4754,57 +4754,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"OpenGym@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "OpenGym@workspace:."
-  dependencies:
-    "@apollo/client": ^3.7.9
-    "@azure/msal-browser": ^2.33.0
-    "@azure/msal-react": ^1.5.3
-    "@babel/core": ^7.20.12
-    "@babel/plugin-syntax-flow": ^7.18.6
-    "@babel/plugin-transform-react-jsx": ^7.20.13
-    "@capacitor/app": 4.1.1
-    "@capacitor/cli": 4.6.3
-    "@capacitor/core": 4.6.3
-    "@capacitor/haptics": 4.1.0
-    "@capacitor/keyboard": 4.1.1
-    "@capacitor/status-bar": 4.1.1
-    "@graphql-codegen/cli": ^3.2.1
-    "@graphql-codegen/client-preset": ^2.1.0
-    "@ionic/react": ^6.5.6
-    "@ionic/react-router": ^6.5.3
-    "@types/node": ^18.14.1
-    "@types/react": ^18.0.28
-    "@types/react-dom": ^18.0.10
-    "@types/react-router": ^5.1.19
-    "@types/react-router-dom": ^5.3.3
-    axios: ^1.3.4
-    env-cmd: ^10.1.0
-    graphql: ^16.6.0
-    ionicons: ^6.1.3
-    react: ^18.2.0
-    react-dom: ^18.2.0
-    react-router: ^5.2.0
-    react-router-dom: ^5.2.0
-    react-scripts: ^5.0.1
-    typescript: ^4.9.5
-    web-vitals: ^3.1.1
-    workbox-background-sync: ^6.5.4
-    workbox-broadcast-update: ^6.5.4
-    workbox-cacheable-response: ^6.5.4
-    workbox-core: ^6.5.4
-    workbox-expiration: ^6.5.4
-    workbox-google-analytics: ^6.5.4
-    workbox-navigation-preload: ^6.5.4
-    workbox-precaching: ^6.5.4
-    workbox-range-requests: ^6.5.4
-    workbox-routing: ^6.5.4
-    workbox-strategies: ^6.5.4
-    workbox-streams: ^6.5.4
-  languageName: unknown
-  linkType: soft
-
 "abab@npm:^2.0.3, abab@npm:^2.0.5":
   version: 2.0.6
   resolution: "abab@npm:2.0.6"
@@ -11455,6 +11404,57 @@ __metadata:
   checksum: e9545bec64cdbf30a0c35c1bdc310344adf8428a117f7d8df3c0af0a0a24c513b304916a6d9b11db0190ff7225c2d578885080b761ed46a3d5f6f1eebb98b63c
   languageName: node
   linkType: hard
+
+"opengym@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "opengym@workspace:."
+  dependencies:
+    "@apollo/client": ^3.7.9
+    "@azure/msal-browser": ^2.33.0
+    "@azure/msal-react": ^1.5.3
+    "@babel/core": ^7.20.12
+    "@babel/plugin-syntax-flow": ^7.18.6
+    "@babel/plugin-transform-react-jsx": ^7.20.13
+    "@capacitor/app": 4.1.1
+    "@capacitor/cli": 4.6.3
+    "@capacitor/core": 4.6.3
+    "@capacitor/haptics": 4.1.0
+    "@capacitor/keyboard": 4.1.1
+    "@capacitor/status-bar": 4.1.1
+    "@graphql-codegen/cli": ^3.2.1
+    "@graphql-codegen/client-preset": ^2.1.0
+    "@ionic/react": ^6.5.6
+    "@ionic/react-router": ^6.5.3
+    "@types/node": ^18.14.1
+    "@types/react": ^18.0.28
+    "@types/react-dom": ^18.0.10
+    "@types/react-router": ^5.1.19
+    "@types/react-router-dom": ^5.3.3
+    axios: ^1.3.4
+    env-cmd: ^10.1.0
+    graphql: ^16.6.0
+    ionicons: ^6.1.3
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    react-router: ^5.2.0
+    react-router-dom: ^5.2.0
+    react-scripts: ^5.0.1
+    typescript: ^4.9.5
+    web-vitals: ^3.1.1
+    workbox-background-sync: ^6.5.4
+    workbox-broadcast-update: ^6.5.4
+    workbox-cacheable-response: ^6.5.4
+    workbox-core: ^6.5.4
+    workbox-expiration: ^6.5.4
+    workbox-google-analytics: ^6.5.4
+    workbox-navigation-preload: ^6.5.4
+    workbox-precaching: ^6.5.4
+    workbox-range-requests: ^6.5.4
+    workbox-routing: ^6.5.4
+    workbox-strategies: ^6.5.4
+    workbox-streams: ^6.5.4
+  languageName: unknown
+  linkType: soft
 
 "optimism@npm:^0.16.1":
   version: 0.16.2

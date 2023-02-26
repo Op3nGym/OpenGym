@@ -17,9 +17,12 @@
     // Azurite
     //   10000, 10001, 10002,
     // ASP.NET Core Web/API App, Blazor App
-    //   5000, 5001,
+    ,6000
+    // 5001,
+    //DAPR
+    ,6379
     // Azure Static Web Apps
-    //   4280
+    ,4280
   ],
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
