@@ -14,6 +14,9 @@ on:
 
 jobs:
   build-and-push-image:
+    permissions:
+      contents: read
+      packages: write
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,15 +26,15 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           # list of Docker images to use as base name for tags
           images: |
-            ghcr.io/${{ github.repository_owner }}/yarp
+            ghcr.io/${{ github.repository }}/yarp
           # generate Docker tags based on the following events/attributes
           tags: |
             type=ref,event=branch
             type=ref,event=pr
             type=sha
-          github-token: ${{ secrets.GHCR_TOKEN }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
@@ -44,7 +47,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ secrets.GHCR_TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push image
         uses: docker/build-push-action@v4
