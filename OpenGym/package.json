@@ -78,7 +78,7 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "4.6.3",
+    "@capacitor/cli": "4.7.0",
     "@graphql-codegen/cli": "^3.2.1",
     "@graphql-codegen/client-preset": "^2.1.0",
     "env-cmd": "^10.1.0",
