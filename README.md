@@ -1,4 +1,4 @@
-# OpenGym - Your best tool to menage your GYM
+# OpenGym - Your best tool to manage your GYM
 
 ## Architecture image
 ![Architecture](docs/Architecture/Opengym-Architecture.svg)
