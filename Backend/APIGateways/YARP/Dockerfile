@@ -1,19 +1,25 @@
+# https://hub.docker.com/_/microsoft-dotnet
 FROM mcr.microsoft.com/dotnet/aspnet:7.0-jammy AS base
 WORKDIR /app
 EXPOSE 80
 
+ENV ASPNETCORE_URLS=http://+:80
+
 FROM mcr.microsoft.com/dotnet/sdk:7.0-jammy AS build
-WORKDIR /Backend
-COPY ["Backend/APIGateways/YARP/YARP.csproj", "Backend/APIGateways/YARP/"]
+WORKDIR /src
+COPY *.csproj .
 RUN dotnet restore "YARP.csproj"
+
+# COPY EVERYTHING ELSE
 COPY . .
-WORKDIR "/Backend/Backend/APIGateways/YARP"
-# RUN dotnet build "AKS.Three.Tier.App.API.csproj" -c Release -o /app/build
+RUN dotnet build "YARP.csproj" -c Release -o /app/build
 
+# copy everything else and build app
 FROM build AS publish
-RUN dotnet publish --no-restore "AKS.Three.Tier.App.API.csproj" -c Release -o /app/publish
+RUN dotnet publish -c Release -o /app/publish --self-contained false --no-restore
 
-FROM base AS final
+# final stage/image
+FROM base as final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "AKS.Three.Tier.App.API.dll"]
+ENTRYPOINT ["dotnet", "YARP.dll"]
