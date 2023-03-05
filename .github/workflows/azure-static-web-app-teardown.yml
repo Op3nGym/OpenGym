@@ -2,8 +2,9 @@ name: Azure Static Web Apps Teardown
 
 on:
   pull_request:
-    types:
-      - closed
+    types: [closed]
+    branches:
+      - develop
 
 # Environment variables available to all jobs and steps in this workflow
 env:
