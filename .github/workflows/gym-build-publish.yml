@@ -1,15 +1,17 @@
-name: Catalog Build and Publish
+name: Gym Build and Publish
 
 on:
   push:
     branches:
       - develop
     paths:
-      - 'Backend/Catalog/**'
+      - 'Backend/Gym/**'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - develop
+    paths:
+      - 'Backend/Gym/**'
   workflow_dispatch:
 
 jobs:
@@ -29,7 +31,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           # list of Docker images to use as base name for tags
           images: |
-            ghcr.io/${{ github.repository }}/catalog
+            ghcr.io/${{ github.repository }}/gym
           # generate Docker tags based on the following events/attributes
           tags: |
             type=ref,event=branch
@@ -52,8 +54,8 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v4
         with:
-          context: ./Backend/Catalog/Catalog.API
-          file: ./Backend/Catalog/Catalog.API/Dockerfile
+          context: ./Backend/Gym/Gym.API
+          file: ./Backend/Gym/Gym.API/Dockerfile
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           push: ${{ github.event_name != 'pull_request' }}
