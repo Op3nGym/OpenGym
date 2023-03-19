@@ -8,7 +8,7 @@
             "url": "http://localhost:4280",
             "webRoot": "${workspaceFolder}",
             "presentation": {
-                "hidden": true,
+                "hidden": false,
                 "group": "",
                 "order": 1
             }
@@ -31,7 +31,7 @@
             },
             "postDebugTask": "daprd-down-yarp",
             "presentation": {
-                "hidden": true,
+                "hidden": false,
                 "group": "",
                 "order": 1
             }
@@ -54,7 +54,30 @@
             },
             "postDebugTask": "daprd-down-catalog",
             "presentation": {
-                "hidden": true,
+                "hidden": false,
+                "group": "",
+                "order": 1
+            }
+        },
+        {
+            "name": "Debug Gym with Dapr",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "dapr-debug-gym",
+            "program": "${workspaceFolder}/Backend/Gym/Gym.API/bin/Debug/net7.0/Gym.API.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/Backend/Gym/Gym.API",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "postDebugTask": "daprd-down-gym",
+            "presentation": {
+                "hidden": false,
                 "group": "",
                 "order": 1
             }

@@ -80,5 +80,31 @@
             "label": "daprd-down-yarp",
             "type": "daprd-down"
         }
+        // GYM service configs
+        {
+            "label": "build-gym",
+            "command": "dotnet",
+            "type": "process",
+            "args": [
+                "build",
+                "${workspaceFolder}/Backend/Gym/Gym.API/Gym.API.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "appId": "gym",
+            "appPort": 7000,
+            "httpPort": 36503,
+            "label": "dapr-debug-gym",
+            "type": "dapr",
+            "dependsOn": "build-gym"
+        },
+        {
+            "appId": "gym",
+            "label": "daprd-down-gym",
+            "type": "daprd-down"
+        }
     ]
 }
