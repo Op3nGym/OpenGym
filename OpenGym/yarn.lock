@@ -8957,6 +8957,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ionicons@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "ionicons@npm:7.0.0"
+  dependencies:
+    "@stencil/core": ^2.18.0
+  checksum: ed3c01b90d5954a9c1ccff6e2e06affacb953ab2224de7c3916d9ed82d9cd6986cd0c23bcfe7ff2e2722c36396fa83b83762e79148cde5f09e9d47e601b75b80
+  languageName: node
+  linkType: hard
+
 "ip@npm:^2.0.0":
   version: 2.0.0
   resolution: "ip@npm:2.0.0"
@@ -11292,7 +11301,7 @@ __metadata:
     axios: ^1.3.4
     env-cmd: ^10.1.0
     graphql: ^16.6.0
-    ionicons: ^6.1.3
+    ionicons: ^7.0.0
     react: ^18.2.0
     react-dom: ^18.2.0
     react-router: ^5.2.0
