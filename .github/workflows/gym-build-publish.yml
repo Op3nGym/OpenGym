@@ -6,12 +6,14 @@ on:
       - develop
     paths:
       - 'Backend/Gym/**'
+      - '.github/workflows/gym-build-publish.yml'
   pull_request:
     types: [opened, synchronize, reopened, closed]
     branches:
       - develop
     paths:
       - 'Backend/Gym/**'
+      - '.github/workflows/gym-build-publish.yml'
   workflow_dispatch:
 
 jobs:
