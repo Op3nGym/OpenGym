@@ -17,7 +17,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-push-image:
+  build-and-push-gym-image:
     permissions:
       contents: read
       packages: write

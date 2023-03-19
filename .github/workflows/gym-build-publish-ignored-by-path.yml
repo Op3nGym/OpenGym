@@ -11,7 +11,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-push-image:
+  build-and-push-gym-image:
     runs-on: ubuntu-latest
     steps:
       - run: 'echo "No build required"'
