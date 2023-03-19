@@ -1,0 +1,17 @@
+name: Yarp Build and Publish
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - develop
+    paths-ignore:
+      - 'Backend/APIGateways/YARP/**'
+      - '.github/workflows/yarp-build-publish.yml'
+  workflow_dispatch:
+
+jobs:
+  build-and-push-image:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo "No build required"'

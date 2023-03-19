@@ -6,12 +6,14 @@ on:
       - develop
     paths:
       - 'OpenGym/**'
+      - '.github/workflows/azure-static-web-app-build-deploy.yml'
   pull_request:
     types: [opened, synchronize, reopened]
     branches:
       - develop
     paths:
       - 'OpenGym/**'
+      - '.github/workflows/azure-static-web-app-build-deploy.yml'
   workflow_dispatch:
 
 

@@ -1,0 +1,17 @@
+name: Gym Build and Publish
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches:
+      - develop
+    paths-ignore:
+      - 'Backend/Gym/**'
+      - '.github/workflows/gym-build-publish.yml'
+  workflow_dispatch:
+
+jobs:
+  build-and-push-image:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'echo "No build required"'
