@@ -10,6 +10,8 @@ on:
     types: [opened, synchronize, reopened, closed]
     branches:
       - develop
+    paths:
+      - 'Backend/APIGateways/YARP/**'
   workflow_dispatch:
 
 jobs:

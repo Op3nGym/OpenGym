@@ -5,6 +5,9 @@ on:
     types: [closed]
     branches:
       - develop
+    paths:
+      - 'OpenGym/**'
+  workflow_dispatch:
 
 # Environment variables available to all jobs and steps in this workflow
 env:
