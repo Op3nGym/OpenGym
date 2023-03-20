@@ -1,4 +1,4 @@
-# OpenGym - Your best tool to manage your GYM
+# OpenGym - The Open Source platform for Gyms
 
 ## Architecture image
 ![Architecture](docs/Architecture/Opengym-Architecture.svg)
