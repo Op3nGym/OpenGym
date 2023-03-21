@@ -3,7 +3,7 @@
 ## Architecture image
 ![Architecture](docs/Architecture/Opengym-Architecture.svg)
 
-## Domains mermaid diagram
+## First draft mermaid diagram
 ```mermaid
 erDiagram
     GYM ||--|{ SUBSCRIPTION : has
