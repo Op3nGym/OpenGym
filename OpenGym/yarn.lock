@@ -2097,12 +2097,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@capacitor/core@npm:4.7.1":
-  version: 4.7.1
-  resolution: "@capacitor/core@npm:4.7.1"
+"@capacitor/core@npm:4.7.2":
+  version: 4.7.2
+  resolution: "@capacitor/core@npm:4.7.2"
   dependencies:
     tslib: ^2.1.0
-  checksum: 326b588f9c5cf338ca9198e6a2d7713618c34807427c869fa64103976532579b42b95fa2da0a96847b7f6f0ff4b289e10379c42fc6676d2e3aaaa9bfe69c9eb2
+  checksum: bdd5955824aa458dac5706d0df6c87250154031942c1b0e22c385a49b155febba1206149c7dc552f5ff482faee7ca751fa610ef6d8d23be3d9cafc81f0f8e454
   languageName: node
   linkType: hard
 
@@ -11296,7 +11296,7 @@ __metadata:
     "@babel/plugin-transform-react-jsx": ^7.21.0
     "@capacitor/app": 4.1.1
     "@capacitor/cli": 4.7.1
-    "@capacitor/core": 4.7.1
+    "@capacitor/core": 4.7.2
     "@capacitor/haptics": 4.1.0
     "@capacitor/keyboard": 4.1.1
     "@capacitor/status-bar": 4.1.1
