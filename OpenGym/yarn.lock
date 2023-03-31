@@ -987,6 +987,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/plugin-syntax-flow@npm:^7.21.4":
+  version: 7.21.4
+  resolution: "@babel/plugin-syntax-flow@npm:7.21.4"
+  dependencies:
+    "@babel/helper-plugin-utils": ^7.20.2
+  peerDependencies:
+    "@babel/core": ^7.0.0-0
+  checksum: fe4ba7b285965c62ff820d55d260cb5b6e5282dbedddd1fb0a0f2667291dcf0fa1b3d92fa9bf90946b02b307926a0a5679fbdd31d80ceaed5971293aa1fc5744
+  languageName: node
+  linkType: hard
+
 "@babel/plugin-syntax-import-assertions@npm:7.20.0, @babel/plugin-syntax-import-assertions@npm:^7.20.0":
   version: 7.20.0
   resolution: "@babel/plugin-syntax-import-assertions@npm:7.20.0"
@@ -11281,7 +11292,7 @@ __metadata:
     "@azure/msal-browser": ^2.34.0
     "@azure/msal-react": ^1.5.4
     "@babel/core": ^7.21.3
-    "@babel/plugin-syntax-flow": ^7.18.6
+    "@babel/plugin-syntax-flow": ^7.21.4
     "@babel/plugin-transform-react-jsx": ^7.21.0
     "@capacitor/app": 4.1.1
     "@capacitor/cli": 4.7.1
