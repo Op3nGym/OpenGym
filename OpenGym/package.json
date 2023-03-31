@@ -14,7 +14,7 @@
     "@capacitor/haptics": "4.1.0",
     "@capacitor/keyboard": "4.1.1",
     "@capacitor/status-bar": "4.1.1",
-    "@ionic/react": "^6.7.0",
+    "@ionic/react": "^7.0.0",
     "@ionic/react-router": "^6.7.0",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.31",
