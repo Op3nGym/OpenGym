@@ -6,7 +6,7 @@
     "@apollo/client": "^3.7.10",
     "@azure/msal-browser": "^2.34.0",
     "@azure/msal-react": "^1.5.4",
-    "@babel/core": "^7.21.3",
+    "@babel/core": "^7.21.4",
     "@babel/plugin-syntax-flow": "^7.21.4",
     "@babel/plugin-transform-react-jsx": "^7.21.0",
     "@capacitor/app": "4.1.1",
