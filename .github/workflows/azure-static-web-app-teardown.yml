@@ -1,12 +1,13 @@
 name: Azure Static Web Apps Teardown
 
 on:
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - develop
     paths:
       - 'OpenGym/**'
+  pull_request:
+    types: [closed]
   workflow_dispatch:
 
 # Environment variables available to all jobs and steps in this workflow
