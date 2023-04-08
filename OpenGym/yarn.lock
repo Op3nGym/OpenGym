@@ -3016,17 +3016,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/core@npm:7.0.0":
-  version: 7.0.0
-  resolution: "@ionic/core@npm:7.0.0"
-  dependencies:
-    "@stencil/core": ^3.1.0
-    ionicons: ^7.1.0
-    tslib: ^2.1.0
-  checksum: 6e627d30b30b5ba65feb92657f023ea6145d29e4511092fd9f93a8f69bef14f61e368dfca469d4c043b7eea59315aee4c598f418a6c28a1ba51c4ddeb2f662bf
-  languageName: node
-  linkType: hard
-
 "@ionic/core@npm:7.0.1":
   version: 7.0.1
   resolution: "@ionic/core@npm:7.0.1"
@@ -3038,36 +3027,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/react-router@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "@ionic/react-router@npm:7.0.0"
+"@ionic/react-router@npm:^7.0.1":
+  version: 7.0.1
+  resolution: "@ionic/react-router@npm:7.0.1"
   dependencies:
-    "@ionic/react": 7.0.0
+    "@ionic/react": 7.0.1
     tslib: "*"
   peerDependencies:
     react: ">=16.8.6"
     react-dom: ">=16.8.6"
     react-router: ^5.0.1
     react-router-dom: ^5.0.1
-  checksum: 62558bd55503990663e55c0ae768b554ce7e83fa8d0e86ca8fb5854184f8fe7227e6d75643b25a742deaed2d2afb7ebea2f3e8c5399591016c1135084d6feb1a
+  checksum: 4e9c281f77dbfee5d6589fea8efa049d5d34ae436acb0b8aa6513bdd25b64aebc93d1c9825754e2e94cb6ed97d74107f0363b83fd54928493993303785fc66a4
   languageName: node
   linkType: hard
 
-"@ionic/react@npm:7.0.0":
-  version: 7.0.0
-  resolution: "@ionic/react@npm:7.0.0"
-  dependencies:
-    "@ionic/core": 7.0.0
-    ionicons: ^7.0.0
-    tslib: "*"
-  peerDependencies:
-    react: ">=16.8.6"
-    react-dom: ">=16.8.6"
-  checksum: 93a7f61d398791f8c1c4741945207ade8c677c3b38131a3227cebbf8803b9c0a6f60c8ede9e0b680310dfd96864190585deb5bc88a17e085fd8e1c3c3287ac2d
-  languageName: node
-  linkType: hard
-
-"@ionic/react@npm:^7.0.1":
+"@ionic/react@npm:7.0.1, @ionic/react@npm:^7.0.1":
   version: 7.0.1
   resolution: "@ionic/react@npm:7.0.1"
   dependencies:
@@ -3756,7 +3731,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stencil/core@npm:^3.1.0, @stencil/core@npm:^3.2.0":
+"@stencil/core@npm:^3.2.0":
   version: 3.2.0
   resolution: "@stencil/core@npm:3.2.0"
   bin:
@@ -11391,7 +11366,7 @@ __metadata:
     "@graphql-codegen/cli": ^3.3.0
     "@graphql-codegen/client-preset": ^3.0.0
     "@ionic/react": ^7.0.1
-    "@ionic/react-router": ^7.0.0
+    "@ionic/react-router": ^7.0.1
     "@types/node": ^18.15.11
     "@types/react": ^18.0.33
     "@types/react-dom": ^18.0.11
