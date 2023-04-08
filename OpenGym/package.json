@@ -80,7 +80,7 @@
   "devDependencies": {
     "@capacitor/cli": "4.7.3",
     "@graphql-codegen/cli": "^3.3.0",
-    "@graphql-codegen/client-preset": "^2.1.1",
+    "@graphql-codegen/client-preset": "^3.0.0",
     "env-cmd": "^10.1.0",
     "react-scripts": "^5.0.1"
   },
