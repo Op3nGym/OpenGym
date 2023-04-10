@@ -85,7 +85,7 @@
     ],
     "compounds": [
         {
-            "name": "Launch SWA + BE with Dapr",
+            "name": "Launch SWA + Catalog,YARP and Dapr",
             "configurations": [
                 "Debug Catalog with Dapr",
                 "Debug YARP with Dapr",

@@ -5,7 +5,7 @@
       "appLocation": "OpenGym",
       "outputLocation": "build",
       "appBuildCommand": "yarn build",
-      "run": "yarn start",
+      "run": "yarn && yarn start",
       "appDevserverUrl": "http://127.0.0.1:3000",
       "apiDevserverUrl": "http://localhost:5000"
     }
