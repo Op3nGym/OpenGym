@@ -3027,22 +3027,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/react-router@npm:^7.0.2":
-  version: 7.0.2
-  resolution: "@ionic/react-router@npm:7.0.2"
+"@ionic/core@npm:7.0.3":
+  version: 7.0.3
+  resolution: "@ionic/core@npm:7.0.3"
   dependencies:
-    "@ionic/react": 7.0.2
+    "@stencil/core": ^3.2.1
+    ionicons: ^7.1.0
+    tslib: ^2.1.0
+  checksum: f08f99b07c84dd266fbdfd7e6e82648fb05e743072b3b14033353289ec48fc894a4f98119f6ef62398407a79490bafdc5f098410869f0c5090bb989d0d628e8d
+  languageName: node
+  linkType: hard
+
+"@ionic/react-router@npm:^7.0.3":
+  version: 7.0.3
+  resolution: "@ionic/react-router@npm:7.0.3"
+  dependencies:
+    "@ionic/react": 7.0.3
     tslib: "*"
   peerDependencies:
     react: ">=16.8.6"
     react-dom: ">=16.8.6"
     react-router: ^5.0.1
     react-router-dom: ^5.0.1
-  checksum: 238c59519119f9e24de6f65886836bd4ac21e60df9b9aa3ee425f653346ee8bbac66b421d69bce64a0dc99e6a611450476a62e772eecf16760de0cb1244c6ac9
+  checksum: 1d720f070f492eacd6f1b9402fcbd1bc7837c290242420a1f14cb09f7e239ecf9262d3d912802afd7ce34133a402f0f24026a819441365cf7535df3fbd6a0b5a
   languageName: node
   linkType: hard
 
-"@ionic/react@npm:7.0.2, @ionic/react@npm:^7.0.2":
+"@ionic/react@npm:7.0.3":
+  version: 7.0.3
+  resolution: "@ionic/react@npm:7.0.3"
+  dependencies:
+    "@ionic/core": 7.0.3
+    ionicons: ^7.0.0
+    tslib: "*"
+  peerDependencies:
+    react: ">=16.8.6"
+    react-dom: ">=16.8.6"
+  checksum: 74b6afc711a69d645d142ed57b6c82ef0507d6d502f83d6d38ef77271c12f41e63dbde636a3efa9c714270a1af94e13cb91260c2b68e68faa64a3911a0fc8780
+  languageName: node
+  linkType: hard
+
+"@ionic/react@npm:^7.0.2":
   version: 7.0.2
   resolution: "@ionic/react@npm:7.0.2"
   dependencies:
@@ -11366,7 +11391,7 @@ __metadata:
     "@graphql-codegen/cli": ^3.3.0
     "@graphql-codegen/client-preset": ^3.0.0
     "@ionic/react": ^7.0.2
-    "@ionic/react-router": ^7.0.2
+    "@ionic/react-router": ^7.0.3
     "@types/node": ^18.15.11
     "@types/react": ^18.0.35
     "@types/react-dom": ^18.0.11
