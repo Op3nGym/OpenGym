@@ -3027,6 +3027,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ionic/core@npm:7.0.6":
+  version: 7.0.6
+  resolution: "@ionic/core@npm:7.0.6"
+  dependencies:
+    "@stencil/core": ^3.2.2
+    ionicons: ^7.1.0
+    tslib: ^2.1.0
+  checksum: d314bc091915a3cee5833ce1477b63ece5a33a6cc88d99f2e0ec08c3f6026e8529804e51ec0f3fe2239b65ab89ee3ae0964589fd0fb30191e5ffc9f09fc89828
+  languageName: node
+  linkType: hard
+
 "@ionic/react-router@npm:^7.0.2":
   version: 7.0.2
   resolution: "@ionic/react-router@npm:7.0.2"
@@ -3042,7 +3053,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/react@npm:7.0.2, @ionic/react@npm:^7.0.2":
+"@ionic/react@npm:7.0.2":
   version: 7.0.2
   resolution: "@ionic/react@npm:7.0.2"
   dependencies:
@@ -3053,6 +3064,20 @@ __metadata:
     react: ">=16.8.6"
     react-dom: ">=16.8.6"
   checksum: 653b20c8fca8a0405ba7b4f351c6d327ffc4d8352f96fab75bf4ef33e338d58adb73ef4dc496a72a40e744a1bd4760985fd08629acb771a90d673cd4fc7ae247
+  languageName: node
+  linkType: hard
+
+"@ionic/react@npm:^7.0.6":
+  version: 7.0.6
+  resolution: "@ionic/react@npm:7.0.6"
+  dependencies:
+    "@ionic/core": 7.0.6
+    ionicons: ^7.0.0
+    tslib: "*"
+  peerDependencies:
+    react: ">=16.8.6"
+    react-dom: ">=16.8.6"
+  checksum: c9a371344daef747e0009a7980be81444d7ab4f8fc947e4333008c8c02095179823576d4c9dc032a4577d73dc8976630d1fa2277c632341a62ff292f5fa47bb0
   languageName: node
   linkType: hard
 
@@ -3737,6 +3762,15 @@ __metadata:
   bin:
     stencil: bin/stencil
   checksum: b7349e0e7551d287264a6052ea0c3246ae6e55c173bffaf7b8db73e16f128ba1bb4e704b7b6d76810a22fc38b9e14daf67d273133f9c435ad327f1a4bd4434b5
+  languageName: node
+  linkType: hard
+
+"@stencil/core@npm:^3.2.2":
+  version: 3.2.2
+  resolution: "@stencil/core@npm:3.2.2"
+  bin:
+    stencil: bin/stencil
+  checksum: ed30f202ed16f4506f2ded18dac0b2afbb080b53580f1d387c492c91cd5ab4ac3caa04baf646095ae01c5312d90ab834794b01f94c8e56a343666282869caf9d
   languageName: node
   linkType: hard
 
@@ -11365,7 +11399,7 @@ __metadata:
     "@capacitor/status-bar": 4.1.1
     "@graphql-codegen/cli": ^3.3.0
     "@graphql-codegen/client-preset": ^3.0.0
-    "@ionic/react": ^7.0.2
+    "@ionic/react": ^7.0.6
     "@ionic/react-router": ^7.0.2
     "@types/node": ^18.15.11
     "@types/react": ^18.0.35
