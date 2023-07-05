@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="HotChocolate.AspNetCore" Version="13.3.0" />
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.3.1" />
     <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.2.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.8" />
