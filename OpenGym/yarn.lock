@@ -118,13 +118,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/msal-react@npm:^1.5.5":
-  version: 1.5.5
-  resolution: "@azure/msal-react@npm:1.5.5"
+"@azure/msal-react@npm:^1.5.10":
+  version: 1.5.10
+  resolution: "@azure/msal-react@npm:1.5.10"
   peerDependencies:
-    "@azure/msal-browser": ^2.35.0
+    "@azure/msal-browser": ^2.38.1
     react: ^16.8.0 || ^17 || ^18
-  checksum: 5e9d17fa47bea5db9d719de04ab72d5dc88d8f7f9a29a2b107c65f80827a5882927fe223f0c25c5ab8073d80f62e06f6514f6592024c358bcd8c22f679916172
+  checksum: 58ce1995bb4162bf49d90e0d46f406785c0ab93abd24cd0303c99e6395405e07c369b6b69d284bf9442f6473150ca32de8d75710d75ed94a4ebd02f1e0d973d8
   languageName: node
   linkType: hard
 
@@ -11353,7 +11353,7 @@ __metadata:
   dependencies:
     "@apollo/client": ^3.7.12
     "@azure/msal-browser": ^2.35.0
-    "@azure/msal-react": ^1.5.5
+    "@azure/msal-react": ^1.5.10
     "@babel/core": ^7.21.4
     "@babel/plugin-syntax-flow": ^7.21.4
     "@babel/plugin-transform-react-jsx": ^7.21.0
