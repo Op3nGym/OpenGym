@@ -4254,14 +4254,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^18.0.35":
-  version: 18.0.35
-  resolution: "@types/react@npm:18.0.35"
+"@types/react@npm:^18.2.19":
+  version: 18.2.19
+  resolution: "@types/react@npm:18.2.19"
   dependencies:
     "@types/prop-types": "*"
     "@types/scheduler": "*"
     csstype: ^3.0.2
-  checksum: e65670397216e037b150a509ec08189140b4c20b82b612ac00b2a7133202be2d1def1e7ee69617b2df06ab4c00c43c4ee23e84788ad661aea9664da2f27c518a
+  checksum: 1ef657b90c7413451bbac2fd2fbce4f8a093941bc5041d344ab9833bc113c8eebf6318dae8aeeb1a0f922f15bc772507e6aaa0c7b51847b5f7302921c8dd6740
   languageName: node
   linkType: hard
 
@@ -11368,7 +11368,7 @@ __metadata:
     "@ionic/react": ^7.0.2
     "@ionic/react-router": ^7.0.2
     "@types/node": ^18.15.11
-    "@types/react": ^18.0.35
+    "@types/react": ^18.2.19
     "@types/react-dom": ^18.0.11
     "@types/react-router": ^5.1.19
     "@types/react-router-dom": ^5.3.3
