@@ -102,19 +102,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@azure/msal-browser@npm:^2.35.0":
-  version: 2.35.0
-  resolution: "@azure/msal-browser@npm:2.35.0"
+"@azure/msal-browser@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@azure/msal-browser@npm:3.0.0"
   dependencies:
-    "@azure/msal-common": ^12.0.0
-  checksum: 8d542d80eb74b8b5158ad3cb8feed9e7d1c24d85f708c3e5054bf5177161d2dcde3a8bcf8d0c97be278399c0b34dade24cc9f72fa7c8fb4ecfcbed2658d522d2
+    "@azure/msal-common": 14.0.0
+  checksum: 88c5556010bcf7e31152bc7654380a74fe88db7274be64c4d12b252f02af5870964b2d13a2a5bbe00ef15159bd365532a19055788e965a6203bdea70fc756fd8
   languageName: node
   linkType: hard
 
-"@azure/msal-common@npm:^12.0.0":
-  version: 12.0.0
-  resolution: "@azure/msal-common@npm:12.0.0"
-  checksum: 674eff1d6465d35831953848092da735f9992bbb92e0a4a6847f1190ea842e84869c98c44ec256c3f04aeb968f97b775cfecf633a6971d48eb7608f3bc12b685
+"@azure/msal-common@npm:14.0.0":
+  version: 14.0.0
+  resolution: "@azure/msal-common@npm:14.0.0"
+  checksum: 986388fc80949e93dafbbdd8db2ea3842d845f082c89f25d4c5174d0f5edc4f6cfc98d5c18621789710adc27cfdbfc8bc8e51be85ee505dda51f5d8d47b2ce19
   languageName: node
   linkType: hard
 
@@ -11352,7 +11352,7 @@ __metadata:
   resolution: "opengym@workspace:."
   dependencies:
     "@apollo/client": ^3.7.12
-    "@azure/msal-browser": ^2.35.0
+    "@azure/msal-browser": ^3.0.0
     "@azure/msal-react": ^1.5.5
     "@babel/core": ^7.21.4
     "@babel/plugin-syntax-flow": ^7.21.4
