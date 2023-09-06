@@ -3027,22 +3027,47 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ionic/react-router@npm:^7.0.2":
-  version: 7.0.2
-  resolution: "@ionic/react-router@npm:7.0.2"
+"@ionic/core@npm:7.3.3":
+  version: 7.3.3
+  resolution: "@ionic/core@npm:7.3.3"
   dependencies:
-    "@ionic/react": 7.0.2
+    "@stencil/core": ^4.1.0
+    ionicons: 7.1.0
+    tslib: ^2.1.0
+  checksum: 77d639d54199bd558830d334b4fc0f6665fc74bb6cd97ac0095a77ef6bb2fc792beddc89ea8ad8c9a443f8e9d5ef1996fc01085c0638260264fa06e6f4ba5aad
+  languageName: node
+  linkType: hard
+
+"@ionic/react-router@npm:^7.3.3":
+  version: 7.3.3
+  resolution: "@ionic/react-router@npm:7.3.3"
+  dependencies:
+    "@ionic/react": 7.3.3
     tslib: "*"
   peerDependencies:
     react: ">=16.8.6"
     react-dom: ">=16.8.6"
     react-router: ^5.0.1
     react-router-dom: ^5.0.1
-  checksum: 238c59519119f9e24de6f65886836bd4ac21e60df9b9aa3ee425f653346ee8bbac66b421d69bce64a0dc99e6a611450476a62e772eecf16760de0cb1244c6ac9
+  checksum: a29fe196daad66380ad7c20a9ca7ddb4f9ab31c9558acf87cfb9ba19aba0b67da29f6f662c02a1e514863ce6c932ecfb2ef14f94f05c3af80094c0f021f629f9
   languageName: node
   linkType: hard
 
-"@ionic/react@npm:7.0.2, @ionic/react@npm:^7.0.2":
+"@ionic/react@npm:7.3.3":
+  version: 7.3.3
+  resolution: "@ionic/react@npm:7.3.3"
+  dependencies:
+    "@ionic/core": 7.3.3
+    ionicons: ^7.0.0
+    tslib: "*"
+  peerDependencies:
+    react: ">=16.8.6"
+    react-dom: ">=16.8.6"
+  checksum: 0b7e10407cb7581888f5fff47da583ce765987d52520baa6cad801e295c12c1bff5747bd94b976ea43c09905a20a932bd2533dca2250eb6211c31caa299c3fdd
+  languageName: node
+  linkType: hard
+
+"@ionic/react@npm:^7.0.2":
   version: 7.0.2
   resolution: "@ionic/react@npm:7.0.2"
   dependencies:
@@ -3737,6 +3762,15 @@ __metadata:
   bin:
     stencil: bin/stencil
   checksum: b7349e0e7551d287264a6052ea0c3246ae6e55c173bffaf7b8db73e16f128ba1bb4e704b7b6d76810a22fc38b9e14daf67d273133f9c435ad327f1a4bd4434b5
+  languageName: node
+  linkType: hard
+
+"@stencil/core@npm:^4.1.0":
+  version: 4.2.0
+  resolution: "@stencil/core@npm:4.2.0"
+  bin:
+    stencil: bin/stencil
+  checksum: fc96d1a96aab495919c702d2b91f33e420733032af7e283724810920d5949d7d7ab76625ac5d5a8b0a79917b9cd931a180fd7eff95c992791916f303d2ab3559
   languageName: node
   linkType: hard
 
@@ -9031,7 +9065,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ionicons@npm:^7.0.0, ionicons@npm:^7.1.0":
+"ionicons@npm:7.1.0, ionicons@npm:^7.0.0, ionicons@npm:^7.1.0":
   version: 7.1.0
   resolution: "ionicons@npm:7.1.0"
   dependencies:
@@ -11366,7 +11400,7 @@ __metadata:
     "@graphql-codegen/cli": ^3.3.0
     "@graphql-codegen/client-preset": ^3.0.0
     "@ionic/react": ^7.0.2
-    "@ionic/react-router": ^7.0.2
+    "@ionic/react-router": ^7.3.3
     "@types/node": ^18.15.11
     "@types/react": ^18.0.35
     "@types/react-dom": ^18.0.11
